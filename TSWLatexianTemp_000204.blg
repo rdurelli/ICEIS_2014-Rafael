@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: TSWLatexianTemp_000204.aux
+The style file: apalike.bst
+Database file #1: example.bib
+Warning--I didn't find a database entry for "Ulrich:2010:IST:1841736"
+Warning--I didn't find a database entry for "550"
+Warning--I didn't find a database entry for "1296153"
+Warning--I didn't find a database entry for "Schmidt06_ModelDrivenEngineering"
+Warning--I didn't find a database entry for "Fowler:2010:DSL:1809745"
+Warning--I didn't find a database entry for "1686216"
+Warning--empty journal in Tilley95perspectiveson
+You've used 8 entries,
+            1935 wiz_defined-function locations,
+            533 strings with 5177 characters,
+and the built_in function-call counts, 3067 in all, are:
+= -- 296
+> -- 133
+< -- 5
++ -- 46
+- -- 44
+* -- 253
+:= -- 542
+add.period$ -- 22
+call.type$ -- 8
+change.case$ -- 62
+chr.to.int$ -- 8
+cite$ -- 9
+duplicate$ -- 119
+empty$ -- 206
+format.name$ -- 58
+if$ -- 597
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 41
+num.names$ -- 24
+pop$ -- 57
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 94
+stack$ -- 0
+substring$ -- 185
+swap$ -- 15
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 46
+warning$ -- 1
+while$ -- 23
+width$ -- 0
+write$ -- 100
+(There were 7 warnings)

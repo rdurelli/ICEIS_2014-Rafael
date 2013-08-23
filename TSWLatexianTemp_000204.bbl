@@ -1,0 +1,46 @@
+\begin{thebibliography}{}
+
+\bibitem[Canfora et~al., 2011]{Canfora2011}
+Canfora, G., Di~Penta, M., and Cerulo, L. (2011).
+\newblock Achievements and challenges in software reverse engineering.
+\newblock {\em Commun. ACM}, 54:142--151.
+
+\bibitem[Chikofsky and Cross~II, 1990]{chikofskyTax}
+Chikofsky, E.~J. and Cross~II, J.~H. (1990).
+\newblock {Reverse Engineering and Design Recovery: A Taxonomy}.
+\newblock {\em IEEE Software}, 7(1):13--17.
+
+\bibitem[Gamma et~al., 1994]{Gamma1994}
+Gamma, E., Helm, R., Johnson, R., and Vlissides, J. (1994).
+\newblock {\em Design Patterns: Elements of Reusable {Object-Oriented}
+  Software}.
+\newblock Addison-Wesley Professional, 1 edition.
+
+\bibitem[Izquierdo and Molina, 2010]{5440163}
+Izquierdo, J. and Molina, J. (2010).
+\newblock An architecture-driven modernization tool for calculating metrics.
+\newblock {\em Software, IEEE}, 27(4):37--43.
+
+\bibitem[Jouault et~al., 2008]{Jouault200831}
+Jouault, F., Allilaire, F., Bezivin, J., and Kurtev, I. (2008).
+\newblock Atl: A model transformation tool.
+\newblock {\em Science of Computer Programming}, 72.
+
+\bibitem[{OMG}, 2012]{OMG}
+{OMG} (2012).
+\newblock {Object Management Group (OMG) Unified Modeling Language (UML),
+  Infrastructure, V2.1.2 - OMG Available Specification without Change Bars}.
+
+\bibitem[Perez-Castillo et~al., 2009]{5328801}
+Perez-Castillo, R., Garcia Rodriguez~de Guzman, I., Piattini, M., and Piattini,
+  M. (2009).
+\newblock On the use of adm to contextualize data on legacy source code for
+  software modernization.
+\newblock In {\em Reverse Engineering, 2009. WCRE '09. 16th Working Conference
+  on}, pages 128--132.
+
+\bibitem[Tilley and Smith, 1995]{Tilley95perspectiveson}
+Tilley, S. and Smith, D. (1995).
+\newblock Perspectives on legacy system reengineering.
+
+\end{thebibliography}

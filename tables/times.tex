@@ -1,0 +1,71 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{multirow}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{tabular}{|c|c|c|}
+\hline 
+\multirow{8}{*}{\begin{sideways}
+RE
+\end{sideways}} & Steps & Time\tabularnewline
+\cline{2-3} 
+ & Parser source-code & 9'\tabularnewline
+\cline{2-3} 
+ & Parser Embedded SQL & 12'\tabularnewline
+\cline{2-3} 
+ & Create JavaModel & 7'\tabularnewline
+\cline{2-3} 
+ & Create SQLModel & 16'\tabularnewline
+\cline{2-3} 
+ & JavaModel\_2\_KDMSource & 11'\tabularnewline
+\cline{2-3} 
+ & SQLModel\_2\_KDMData & 7' 35''\tabularnewline
+\cline{2-3} 
+ & TOTAL Phase & 62' 35''\tabularnewline
+\hline 
+\multirow{6}{*}{\begin{sideways}
+Reestructuring
+\end{sideways}} & Steps & Time\tabularnewline
+\cline{2-3} 
+ & Create Entities & 15'\tabularnewline
+\cline{2-3} 
+ & Apply Facade Pattern & 9'\tabularnewline
+\cline{2-3} 
+ & Create WebService & 10'\tabularnewline
+\cline{2-3} 
+ & Create Configuration Files & 2'\tabularnewline
+\cline{2-3} 
+ & TOTAL Phase & 36'\tabularnewline
+\hline 
+\multirow{6}{*}{\begin{sideways}
+FE 
+\end{sideways}} & Steps & Time\tabularnewline
+\cline{2-3} 
+ & KDM\_2\_UML & 13'\tabularnewline
+\cline{2-3} 
+ & UML\_2\_JavaModel & 14' 50''\tabularnewline
+\cline{2-3} 
+ & UML\_2\_RestModel & 6' 27''\tabularnewline
+\cline{2-3} 
+ & Generate Source-Code & 5' 39''\tabularnewline
+\cline{2-3} 
+ & TOTAL Phase & 40' 33''\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{TOTAL Modernization} & 2 hours and 30 minutes\tabularnewline
+\hline 
+\end{tabular}
+\end{document}
