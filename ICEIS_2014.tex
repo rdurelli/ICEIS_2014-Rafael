@@ -59,14 +59,22 @@ In this context, OMG (Object Management Group) has employed a lot of effort to d
 
 \section{\uppercase{Motivation}}
 
-\noindent Our motivation is fourfold. Firstly, is the present lack of a fully developed idea of ``good'' modernization by using ADM and its metamodels by using design patterns to assist the modernization of legacy systems. This is an important issue, for a clear notion of style is a fundamental prerequisite for the use of modernization by means of ADM, enabling programmers to see where they are heading when modernizing their legacy system. 
+\noindent Our motivation is fourfold. Firstly, is the present lack of a fully developed idea of ``good'' modernization by using ADM and its metamodels. We claim that by using design patterns~\cite{Gamma1994} during the modernization by means of ADM and its metamodels it is an important issue, once they provide a clear notion of style, as result enabling programmers to see where they are heading when modernizing their legacy system. 
+
+
+
+
+ %by using design patterns to assist the modernization of legacy systems. This is an important issue, for a clear notion of style is a fundamental prerequisite for the use of modernization by means of ADM, enabling programmers to see where they are heading when modernizing their legacy system. 
 
 %A second hurdle - both a cause and a consequence of the first - is the present lack of an ADM equivalent of such catalogues. Our work is based on the assumption that the process of modernization by using KDM would equally benefit from KDM specific catalogues of smells and refactorings, helping programmers to detect situations in the KDM model that could be improved and guiding them through the corresponding transformation processes.
 
 %Secondly, is that generally, the source code is the only available artifact of the legacy software. By applying model-based modernization, both the legacy software and the generated software will have a new type of artifact, improving their documentation. Our work is based on the assumption that the process of modernization by using ADM would equally benefiting and helping programmers to modernize a legacy systems by using its metamodels.
 
 
-Secondly, one problem with automated restructuring techniques that modify source-code is that they do not restructure in-line documentation (i.e., program documentations) along with the source-code. This means that manual labor to restructure documentation is nearly always needed after applying a restructuring approach. In addition, the source-code is the only available artifact of the legacy software. We argue that by applying model-base modernization, both the legacy software and the generated software will have either a restructure documentation or a new type of artifact as result improving their documentation.
+Secondly, one problem with automated restructuring techniques that modify source-code is that they do not restructure in-line documentation (i.e., program documentations) along with the source-code. This means that manual labor to restructure documentation is nearly always needed after applying a restructuring approach. Generally, the source-code is the only available artifact of the legacy system. We argue that by applying model-base modernization, either the non up-to-date documentation of a legacy system or in case of missing documentation, updated/new documentation (such UML) can be obtained improving its understanding.
+
+
+%both the legacy system and the generated software will have either a restructure documentation or a new type of artifact as result improving their documentation.
 
 %One problem with automated restructuring techniques that modify code is they don’t restructure in-line documentation (i.e., rewrite program comments) along with the code. This means that manual labor to restructure documentation is nearly always needed after applying a restructuring approach. Automat- ing the restructuring of documentation is important for making restructuring more cost- effectiv
 
@@ -77,35 +85,25 @@ Finally, the absence of tool that supporting modernization by using the KDM spec
 \section{\uppercase{Background}}
 
 \noindent In this section we provide a brief background to Architecture-Driven Modernization (ADM) presenting the core ideas. Furthermore, this section describes the an of the ADM standards, e.i., Knowledge Discovery Metamodel (KDM).
-
-\subsection{Model-Driven Development}
-
-Software systems are becoming increasingly complex as customers demand richer functionality delivered in ever shorter timescales~\cite{550}. 
-In this context, Model-Driven Development (MDD) can be used to speed up software development and manage complexity is to shift from programming in solution-space in order to model problem-space.
-
-MDD is an approach to software development that give particular emphasis upon making models the primary development artifact and subjecting such models to a refinement process, by using automatic transformations, until a running system is obtained. In this context, MDD aims to provide higher level of abstraction in development of systems which further results in an improved understanding of complex systems~\cite{1296153}. 
-
-Furthermore, MDD handles problems in software systems development that originate from existence of heterogeneous platforms. It achieves this through keeping different levels of model abstractions; and by transforming models from Platform Independent Models (PIMs) to Platform Specific Models (PSMs). Therefore, automatic  generation of application code (i.e. automatic model-driven code generation) offers many advantages such as the rapid development of high quality code, reduced number of accidental programming errors, enhanced consistency between design and code~\cite{Schmidt06_ModelDrivenEngineering}. Changes in implementation strategies can be achieved through modifying the transformations. Shifting engineering concerns to platform-independent levels allows developers to focus on designing applications without involvement in platform-specific concepts.
-
-It is worth highlight that models in MDD are usually represented by domain-specific languages~\cite{Fowler:2010:DSL:1809745}, i.e., a language that adequately represents the information of a given domain. Instead of representing elements using a general purpose language, producing source code (e.g., Java) and class diagrams (e.g., plain UML models), the knowledge is described in a language which the domain experts understand. Besides, as the expert uses a suitable language to describe the system at hand, the accidental complexity that one inherent from the restrictions of the language to properly describe a given domain is reduced, leaving only the essential complexity of the problem. 
+ 
 
 \subsection{Architecture-Driven Modernization}
 
-Nowadays, researchers have been shifted from the typical refactoring process to the so-called Architecture-Driven Modernization (ADM). ADM is the concept of modernizing existing systems with a focus on all aspects of the current systems architecture and the ability to transform current architectures to target architectures by using all principles of MDD~\cite[p.~60]{Ulrich:2010:IST:1841736}. Figure~\ref{horseshoe} shows the ADM modernization domain model where the left side of the horseshoe is the current state of a business architecture ``as-is'' and the right side is what we want to get after the modernization ``to-be''.
+Nowadays, researchers have been shifted from the typical refactoring process to the so-called Architecture-Driven Modernization (ADM)~\cite{SMR:SMR582,5773392,Guzman:2007:AAR:1339262.1339532,Bruneliere:2010:MGE:1858996.1859032,delCastillo:2009:PRP:1529282.1529753}. ADM is the concept of modernizing existing systems with a focus on all aspects of the current systems architecture and the ability to transform current architectures to target architectures by using all principles of Model-Driven Development (MDD)~\cite{Guzman:2007:AAR:1339262.1339532}. Figure~\ref{horseshoe} shows the ADM modernization domain model where the left side of the horseshoe is the current state of a business architecture ``as-is'' and the right side is what we want to get after the modernization ``to-be''.
 
 
 \begin{figure}[!ht]
 \centering
   % Requires \usepackage{graphicx}
   \includegraphics[scale=0.37]{figuras/Fonte_horse_shoe}
-\caption{Modernization domain model (Adapted from Ulrich and Newcomb~\cite{Ulrich:2010:IST:1841736})}
+\caption{Modernization domain model.}
 \label{horseshoe}
 \end{figure}
 
 As can be seen in Figure~\ref{horseshoe} the horseshoe reengineering model has been adapted to ADM and it is nowadays known as horseshoe modernization model. As ADM uses the principles of MDD three kinds of models in the horseshoe are used, they are: (\textit{i}) PIM - \textbf{P}lataform \textbf{I}ndependent \textbf{M}odel which represents a view of the system from the platform independent viewpoint at an intermediate abstraction level, (\textit{ii}) PSM - \textbf{P}lataform \textbf{S}pecific \textbf{M}odel which constitutes a view of the system from the platform specific viewpoint at a low abstraction level, and (\textit{iii}) CIM - \textbf{C}omputational \textbf{I}ndependent \textbf{M}odel that represents a view of the system from the computational independent viewpoint at a high abstraction level. These models are used in the steps of the ADM process, i.e., Reverse Engineering, Restructuring, and Forward Engineering. In the first step, a reverse engineering is performed starting from the artifacts of the legacy system (source code, database, configuration files, etc) and a set of PSM are created. Next, refactoring and restructuring techniques can be applied on these models in order to solve problems found in the legacy system. Therefore, this step consist of a set of transformation from the input model (``as-is'') to obtain a target model (``to-be''). Finally, a forward engineering is carried out and the source code of the modernized target system is generated again. 
 
 
-In order to perform such steps, ADM introduces several modernization standards: Abstract Syntax Tree Metamodel (ASTM), Knowledge Discovery Metamodel (KDM), Structured Metrics Metamodel (SMM), etc. The next subsections present more information about these standards:
+In order to perform such steps, ADM introduces several modernization standards: Abstract Syntax Tree Metamodel (ASTM), Knowledge Discovery Metamodel (KDM), Structured Metrics Metamodel (SMM), etc. As KDM is the metamodel more important~\cite{OMG} and our approach is based on it, herein we just present information about the KDM. Thus, next subsection present more information about it.
 
 
 %System Assurance \& Evidence, Software Quality and Business Architecture Standards. Nevertheless, in this paper we are especially interested in KDM, i.e., it is the key cornerstone of ADM and KDM owns a set of metamodel elements whose purpose is to represent implementation level program elements and their associations. The details of KDM are described as follows:
@@ -163,15 +161,15 @@ In order to explain our approach, there is an activity diagram on Figure~\ref{fi
 
 \subsection{Reverse Engineering - RE} 
 
-The aim of this phase is to analyze the legacy systems in order to identify the components of the system and their interrelationships. Furthermore, it also intends to build a set of representation of the legacy system's artifacts at a higher level of abstraction, i.e., both PSM and PIM are created in this phase. 
+The aim of this phase is to analyze the legacy systems in order to discovery their knowledge, i.e., their components and interrelationships. Furthermore, it also intends to build a set of representation of the legacy system's artifacts at a higher level of abstraction, i.e., both PSM and PIM are created in this phase. 
 
 In our approach the RE starts by parsing two artifacts: (\textit{i}) the legacy system's source-code, and (\textit{ii}) the embedded SQL queries, Figure~\ref{fig:activity_diagram} steps \circled{\textbf{A}} and \circled{\textbf{B}}. Therefore, the  approach need to use parser to obtain information related to these artifacts. 
 
 The former parser (see Figure~\ref{fig:activity_diagram} step \circled{\textbf{A}}) is responsible to take as input the source-code of the legacy system and then to build a data structure as output, e.g., herein the output is represented by an Abstract Syntax Tree - (AST)  which is a tree representation of the abstract syntactic structure of Java source code, by using it is possible to carry out either analysis or transformation on documents that contain programming language text.
 
 
- The latter parser (see Figure~\ref{fig:activity_diagram} step \circled{\textbf{B}}) exhaustively scans the source-code. As the parser finds an SQL statement embedded into the source-code of the legacy system, such as \textit{Select}, \textit{Delete}, \textit{Update} and \textit{Insert}, it translates those statement into an AST. As a common programming technique, many SQL statements (or partial of them) are declared as string variables, therefore variable  declarations and assignments are also of our focus.
-In Listing~\ref{list:embeddedSQL} depicts a chunk of code which contains four SQL statement. 
+ The latter parser (see Figure~\ref{fig:activity_diagram} step \circled{\textbf{B}}) exhaustively scans the source-code. As the parser finds a SQL statement embedded into the source-code of the legacy system, such as \textit{Select}, \textit{Delete}, \textit{Update} and \textit{Insert}, it translates those statement into an AST. As a common programming technique, many SQL statements (or partial of them) are declared as string variables, therefore variable  declarations and assignments are also of our focus.
+In Listing~\ref{list:embeddedSQL} depicts a chunk of code which contains four embedded SQL statement. 
 
 \begin{lstlisting}[caption=Example of Embedded SQL, label=list:embeddedSQL, frame=lrtb, basicstyle=\tiny]
 public class Entity {
@@ -192,7 +190,7 @@ public class Entity {
 
 
 
-For instance, for each SQL statement, i.e., Select in line 5, Update in line 8, Insert in line 10 and Delete in line 12 the parser recognizes, analyzes and creates an AST. This AST contains information related to the name of the tables and some columns that are involved in such statements. Nevertheless, as can be seen some statements hide important informations (see Listing~\ref{list:embeddedSQL} line 5) such as the columns of a table. Therefore, initially this AST is not complete once it just owns the names of the tables and some columns. However, name of the tables and some columns are not sufficient as the approach need to identify all columns of a table, to recognize if the column is either primary key or foreign key, to pinpoint the relationships among the tables, and also to identify the type of the columns. Therefore, to address this issue the approach need to connect to the database of the legacy system in order to get these information.  As for getting this information the approach uses database metadata (data about database data). Metadata provides a structured description of database information resource and services.
+For instance, for each SQL statement, i.e., Select in line 3, Update in line 6, Insert in line 8 and Delete in line 10 the parser recognizes, analyzes and creates an AST. This AST contains information related to the name of the tables and some columns that are involved in such statements. Nevertheless, as can be seen some statements hide important informations (see Listing~\ref{list:embeddedSQL} line 3) such as the columns of a table. Therefore, initially this AST is not complete once it just owns the names of the tables and some columns. Nevertheless, name of the tables and some columns are not sufficient as the approach need to identify all columns of a table, to recognize if the column is either primary key or foreign key, to pinpoint the relationships among the tables, and also to identify the type of the columns. Therefore, in order to address this issue the approach need to connect to the legacy system's database to discovery these information. As for getting this information the approach uses database metadata (data about database data). %Metadata provides a structured description of database information resource and services.
 
 
 
@@ -219,14 +217,14 @@ For instance, for each SQL statement, i.e., Select in line 5, Update in line 8, 
 
 
 
-After parsing the artifacts two steps must be carry out: (\textit{i}) to create a PSM to represent the source-code of the legacy systems - the AST obtained by the first parser described aforementioned will be transformed to an instantiation of the Java meta-model, and (\textit{ii}) to create a PSM which represents the SQL identified in the source-code - the second AST obtained and described earlier will be transformed to an instantiation of an SQL meta-model, these steps are depicted in Figure~\ref{fig:activity_diagram} steps \circled{\textbf{C}} and \circled{\textbf{D}}, respectively.
+After parsing the artifacts two steps must be carry out: (\textit{i}) to create a PSM to represent the source-code of the legacy systems - the AST obtained by the first parser described aforementioned will be transformed to an instantiation of the Java meta-model, and (\textit{ii}) to create a PSM which represents the SQL identified in the source-code - the second AST obtained and described earlier will be transformed to an instantiation of a SQL meta-model, these steps are depicted in Figure~\ref{fig:activity_diagram} steps \circled{\textbf{C}} and \circled{\textbf{D}}, respectively.
 
 
 
 %After parsing the artifacts two PSM must be obtained by mean of a set of model transformation. More specifically, the AST which represents information related to the source-code will be transformed to an instantiation of the Java meta-model. In the same way, the AST which contains information related to the embedded SQL will be transformed to an instantiation of the SQL meta-model. These are depicted in Figure~\ref{fig:activity_diagram} steps \circled{\textbf{C}} and \circled{\textbf{D}}.
 
-In the steps \circled{\textbf{C}} a set of rules must be applied to transform the AST into a instance of the Java meta-model. 
- Java meta-model is the reflection of the Java language, as defined in version 3 of ``Java Language Specification'' from Sun Microsystems. Due space limitation in Figure~\ref{fig:java_metamodel} is depicted just a chunk of the Java meta-model; the complete Java meta-model contains 126 meta-classes. As can be seen, in Figure~\ref{fig:java_metamodel} each meta-classes is intended to represent an element of the Java language. For instance, each ``package'' found in the source-code is transformed to instances of the meta-classe ``Package'', ``Classes'' are transformed to instances of the meta-classe ``ClassDeclaration'', ``Fors'' are transformed to instances of the meta-classe ``ForStatement'', etc;
+In the steps \circled{\textbf{C}} a set of rules must be applied to transform the AST into an instance of the Java meta-model. 
+ Java meta-model is the reflection of the Java language, as defined in version 3 of ``Java Language Specification'' from Sun Microsystems. The complete Java meta-model contains 126 meta-classes, thus, due space limitation in Figure~\ref{fig:java_metamodel} is depicted just a chunk of the Java meta-model. As can be seen, in Figure~\ref{fig:java_metamodel} each meta-classes is intended to represent an element of the Java language. For instance, each ``package'' found in the source-code is transformed to instances of the meta-classe \texttt{Package}, ``Classes'' found are transformed to instances of the meta-classe \texttt{ClassDeclaration}, ``Fors'' statements are transformed to instances of the meta-classe \texttt{ForStatement}, etc;
 
 \begin{figure}[!h]
 \centering
@@ -236,7 +234,7 @@ In the steps \circled{\textbf{C}} a set of rules must be applied to transform th
 \label{fig:java_metamodel}
 \end{figure}
 
-On the fourth step (see Figure~\ref{fig:activity_diagram} \circled{\textbf{D}}) an instance of the SQL model must be obtained. The SQL model used herein is represented in a PSM model according to the SQL-92 standard (ref). Figure~\ref{fig:sql_metamodel} presents the SQL meta-model. This meta-model contains meta-classes to represent each element identified by the second parser. More specifically, the tables identified earlier (rule R1), its columns (rule R2), the data type associated with each column (rule R3), the primary key associated with each table (rule R4), and the foreign key associated with each table (rule R5) is represented by this meta-model. Next, we describe each of these rules.
+On the fourth step (see Figure~\ref{fig:activity_diagram} \circled{\textbf{D}}) an instance of the SQL model must be obtained. The SQL model used herein is represented in a PSM model according to the SQL-92 standard\footnote{http://savage.net.au/SQL/sql-92.bnf.html}. Figure~\ref{fig:sql_metamodel} presents the SQL meta-model. This meta-model contains meta-classes to represent each element identified by the second parser. More specifically, the tables identified earlier (rule R1), its columns (rule R2), the data type associated with each column (rule R3), the primary key associated with each table (rule R4), and the foreign key associated with each table (rule R5) is represented by this meta-model. To realize the transformation rules (R1 through R6) need to be applied. Next, we describe each of these rules.
 
 \begin{figure}[!h]
 \centering
@@ -248,20 +246,20 @@ On the fourth step (see Figure~\ref{fig:activity_diagram} \circled{\textbf{D}}) 
 
 \begin{itemize}
 
-\item \textbf{Rule R1:} Tables that were found in any SQL statement (Insert, Select, Update or Delete) as either source or target clauses (From, Set, Into, and so on) are represented by an instance of the meta-classe Table, see Figure~\ref{fig:sql_metamodel};
+\item \textbf{Rule R1:} Tables that were found in any SQL statement (\texttt{Insert}, \texttt{Select}, \texttt{Update} or \texttt{Delete}) as either source or target clauses (\texttt{From}, \texttt{Set}, \texttt{Into}, and so on) are represented by an instance of the meta-classe \texttt{Table}, see Figure~\ref{fig:sql_metamodel};
 
-\item \textbf{Rule R2:} The columns that are identified by means of the parser or by the database metadata in the SQL statements are created in the corresponding tables. These tables have previously been created through the application of \textbf{R1}. Those columns are represented by the meta-classe Column, see Figure~\ref{fig:sql_metamodel}.
+\item \textbf{Rule R2:} The columns that are identified by means of the parser or by the database metadata in the SQL statements are created in the corresponding tables. These tables have previously been created through the application of \textbf{R1}. Those columns are represented by the meta-classe \texttt{Column}, see Figure~\ref{fig:sql_metamodel}.
 
-\item \textbf{Rule R3:} The data type associated with each column was deduced through the database metadata. Therefore, for the columns that have previously been created through the application of \textbf{R2}, are now updated with their specific type, see the meta-Enumeration named Type in Figure~\ref{fig:sql_metamodel}.
+\item \textbf{Rule R3:} The data type associated with each column was deduced through the database metadata. Therefore, for the columns that have previously been created through the application of \textbf{R2}, are now updated with their specific type, see the meta-Enumeration named \texttt{Type} in Figure~\ref{fig:sql_metamodel}.
 
-\item \textbf{Rule R4:} The constraint of columns  was also deduced through the database metadata. As result, for the columns that have previously been created through the application of \textbf{R2}, at least one should be flagged as primary key. Thus, if a column is primary key then an instance of the meta-classe PrimaryKey is instantiated. 
+\item \textbf{Rule R4:} The constraint of columns  was also deduced through the database metadata. As result, for the columns that have previously been created through the application of \textbf{R2}, at least one should be flagged as primary key. Thus, if a column is primary key then an instance of the meta-classe \texttt{PrimaryKey} is instantiated. 
 
-\item \textbf{Rule R5:} Foreign key that were found in the database metadata are represented by an instance of the meta-classe ReferentialConstraint, see Figure~\ref{fig:sql_metamodel}.
+\item \textbf{Rule R5:} Foreign key that were found in the database metadata are represented by an instance of the meta-classe \texttt{ReferentialConstraint}, see Figure~\ref{fig:sql_metamodel}.
 
 \end{itemize}
 
-Upon finishing the instantiation of both PSMs (Java model and SQL model), the next two steps consist of transforming them into KDM, which represent the same information but in a platform-independent manner. To do so, two steps must be carried out: (\textit{i}) \textit{JavaModel2KDMCode}, and (\textit{ii}) \textit{SQLModel2KDMData}, Figure~\ref{fig:activity_diagram} steps \circled{\textbf{E}} and \circled{\textbf{F}}, respectively. %The JavaModel2KDMSource transformation is carried out on instances of Java meta-mode (Figure~\ref{fig:java_metamodel}), and produces a corresponding model based on the KDMSource meta-model. Similarly, the SQLModel2KDMData transformation is carried out on instances of SQL meta-model (Figure~\ref{fig:sql_metamodel}), and produces a corresponding model based on the KDMData meta-model. 
-As stated in Section~\ref{subsec:KDM} KDM contains severals meta-models, but herein we are only interested in the Code meta-model, which represents the code elements of a program and their associations and in the Data meta-model which defines a set of meta-model elements whose purpose is to represent organization of data in the existing software system. A briefly overview of both meta-models KDMCode and KDMData are depicted in Figure~\ref{fig:KDMSOurce} and~\ref{fig:KDMDATA}. 
+Upon finishing the instantiation of both PSMs (Java model and SQL model), the next two steps consist of transforming them into KDM, which represent the same information but in a platform-independent manner. To do so, two steps must be carried out: (\textit{i}) \texttt{JavaModel2KDMCode}, and (\textit{ii}) \texttt{SQLModel2KDMData}, Figure~\ref{fig:activity_diagram} steps \circled{\textbf{E}} and \circled{\textbf{F}}, respectively. %The JavaModel2KDMSource transformation is carried out on instances of Java meta-mode (Figure~\ref{fig:java_metamodel}), and produces a corresponding model based on the KDMSource meta-model. Similarly, the SQLModel2KDMData transformation is carried out on instances of SQL meta-model (Figure~\ref{fig:sql_metamodel}), and produces a corresponding model based on the KDMData meta-model. 
+As stated in Section~\ref{subsec:KDM} KDM contains severals meta-models, but herein we are only interested in the Code meta-model, which represents the code elements of a program and their associations and in the Data meta-model which defines a set of meta-model elements whose purpose is to represent organization of data in the existing software system. A briefly overview of both meta-models \texttt{KDMCode} and \texttt{KDMData} are depicted in Figure~\ref{fig:KDMSOurce} and~\ref{fig:KDMDATA}. 
 
 
 \begin{figure}[!h]
@@ -274,10 +272,10 @@ As stated in Section~\ref{subsec:KDM} KDM contains severals meta-models, but her
 
 %A briefly description of both KDMSource and KDMData are depicted in Figure~\ref{fig:KDMSOurce} and~\ref{fig:KDMDATA}.
 
- Our approach uses ATL (ATLAS Transformation Language)~\cite{Jouault200831} to realize model-to-model transformations. In Listing~\ref{list:KDMSource1} is depicted a chunk of code related to the transformation \textit{JavaModel2KDMCode}, i.e., step \circled{\textbf{E}}. Notice that the \textit{JavaModel2KDMCode} is carried out on instances of Java meta-mode (Figure~\ref{fig:java_metamodel}), and produces a corresponding model based on the KDMSource meta-model, see Listing~\ref{list:KDMSource1} in lines 1 and 2. ATL is based in \textit{rules}. Therefore, we have defined a set of rules to transform each meta-classe of the Java meta-model (Figure~\ref{fig:java_metamodel}) to a instance of KDMCode. 
+ Our approach uses ATL (ATLAS Transformation Language)~\cite{Jouault200831} to realize model-to-model transformations. In Listing~\ref{list:KDMSource1} is depicted a chunk of code related to the transformation \texttt{JavaModel2KDMCode}, i.e., step \circled{\textbf{E}}. Notice that the \texttt{JavaModel2KDMCode} is carried out on instances of Java meta-mode (Figure~\ref{fig:java_metamodel}), and produces a corresponding model based on the KDMSource meta-model, see Listing~\ref{list:KDMSource1} in lines 1 and 2. ATL is based in \textit{rules}. Therefore, we have defined a set of rules to transform each meta-classe of the Java meta-model (Figure~\ref{fig:java_metamodel}) to a instance of \texttt{KDMCode}. 
 
 
-Lines  3-8 show a rule to transform instance of packages from the source (Java meta-model) to packages of the target meta-model (KDMCode), by keeping the same name. Lines 10-20 illustrate a transformation rule responsible to transform from the Java meta-model instance of class (\textit{ClassDeclaration}) and its methods (\textit{MethodDeclaration}) to \textit{ClassUnit} and \textit{MethodUnit} of the target KDMCode meta-model.
+Lines  3-8 show a rule to transform instance of packages from the source (Java meta-model) to packages of the target meta-model (\texttt{KDMCode}), by keeping the same name. Lines 10-20 illustrate a transformation rule responsible to transform from the Java meta-model instance of class (\texttt{ClassDeclaration}) and its methods (\texttt{MethodDeclaration}) to \texttt{ClassUnit} and \texttt{MethodUnit} of the target \texttt{KDMCode} meta-model.
 
 
 %A briefly description of the meta-model of KDMSource is depicted in Figure~\ref{fig:KDMSOurce}.
@@ -318,7 +316,7 @@ rule Class{
 \label{fig:KDMDATA}
 \end{figure}
 
-The second transformation \textit{SQLModell2KDMData} is carried out on instances of SQL meta-mode (Figure~\ref{fig:sql_metamodel}), and produces a corresponding model based on the KDMData meta-model (Figure~\ref{fig:KDMDATA}), see Listing~\ref{list:KDMData} in lines 1 and 2. Lines 4-12 describe a rule to transform the \textit{SQLSchema} from the source (SQL meta-model) to \textit{RelationalSchema} of the target meta-model (KDMData), by copying the name and the references of all tables. After, in lines 13-21 are described a rule to transform the \textit{Table} from the source (SQL meta-model) to \textit{RelationalTable} of the target meta-model (KDMData), by copying the name and keeping all columns of such \textit{Table}. In lines 22-28 show a rule to transform \textit{Column} and its type from the source meta-model to \textit{ColumnsSet} of the target meta-model. Finally, in lines 30-34 the types of the columns are identified.
+The second transformation \texttt{SQLModell2KDMData} is carried out on instances of SQL meta-mode (Figure~\ref{fig:sql_metamodel}), and produces a corresponding model based on the \texttt{KDMData} meta-model (Figure~\ref{fig:KDMDATA}), see Listing~\ref{list:KDMData} in lines 1 and 2. Lines 4-12 describe a rule to transform the \texttt{SQLSchema} from the source (SQL meta-model) to \texttt{RelationalSchema} of the target meta-model (\texttt{KDMData}), by copying the name and the references of all tables. After, in lines 13-21 are described a rule to transform the \texttt{Table} from the source (SQL meta-model) to \texttt{RelationalTable} of the target meta-model (\texttt{KDMData}), by copying the name and keeping all columns of such \texttt{Table}. In lines 22-28 show a rule to transform \texttt{Column} and its type from the source meta-model to \texttt{ColumnsSet} of the target meta-model. Finally, in lines 30-34 the types of the columns are identified.
 
 \begin{lstlisting}[caption=Chunk of SQLModel2KDMData, label=list:KDMData, frame=lrtb, basicstyle=\tiny]
 module SQLModel2KDMData;
@@ -360,15 +358,16 @@ rule Column2ColumnSet {
 
 \end{lstlisting}
 
+
 \subsection{Reestructuing} % (fold)
 \label{sub:restructuing}
 
 
-The goal of this phase is to analysis the models created earlier to modernize automatically the legacy system into services, i.e., RESTFull operations. Therefore, in this phase is carried out an algorithm which takes as input both models KDMCode and KDMData - then four steps are conducted to create a set of services. The Algorithm 1 presents how the services are create, more information related to the steps are as follows:
+The goal of this phase is to analysis the models created earlier to modernize automatically the legacy system into services, i.e., RESTFull operations. Therefore, in this phase is carried out an algorithm which takes as input both models \texttt{KDMCode} and \texttt{KDMData} - then four steps are conducted to create a set of services. The Algorithm 1 illustrates how the services are create, more information related to the steps are as follows.
 
 %Services are entities that are either annotated with @Path or have at least one method annotated with @Path or a request method designator, such as @GET, @PUT, @POST, or @DELETE. 
 
-Services are entities that are either annotated with @Path or have at least one method annotated with @Path or a request method designator, such as @GET, @PUT, @POST, or @DELETE. Thus, firstly, it is necessary to create entities with the information identified earlier. In other words, one must to transform all identified embedded SQL code (the tables, columns and even the relationship), which are now represent by the metaclasses of the KDMData to the correct metaclasse of the KDMCode. This is carried out by the step \circled{\textbf{G}}, see Figure~\ref{fig:activity_diagram}. Lines 2 of the Algorithm 1 depicts a loop which is executed for each meta-classe \textit{RelationalTable} belonging to the metamodel KDMData. After, in line 3, the function \textit{createClassUnit} is called. This function gets the meta-attributes name of the \textit{RelationalTable} and then create an instance of the meta-classe \textit{ClassUnit}. \textit{ClassUnit} is a meta-class that represents user-defined classes in object-oriented languages~\cite{5328801}. In line 4, the function \textit{createDataElement} is executed. This function obtains the all columns of the \textit{RelationalTable} and then create an instance of the meta-classe \textit{DataElement} which represent attributes in the KDM. In line 5 the function \textit{createMethodUnit} is carried out. This fuction is similar to the last one, however, instead of attributes, \textit{gets} and \textit{sets} are created. These methods are represented by instances of the meta-classe \textit{MethodUnit} which represents member functions owned by a ClassUnit.
+Services, in Java are entities that are either annotated with \texttt{@Path} or have at least one method annotated with \texttt{@Path} or a request method designator, such as \texttt{@GET}, \texttt{@PUT}, \texttt{@POST}, or \texttt{@DELETE}. Thus, firstly, it is necessary to create entities with the information identified earlier. In other words, one must to transform all identified embedded SQL code (the tables, columns and even the relationship), which are now represent by the meta-classes of the \texttt{KDMData} to the correct meta-classe of the \texttt{KDMCode}. This is carried out by the step \circled{\textbf{G}}, see Figure~\ref{fig:activity_diagram}. Lines 2 of the Algorithm 1 depicts a loop which is executed for each meta-classe \texttt{RelationalTable} belonging to the meta-model \texttt{KDMData}. After, in line 3, the function \texttt{createClassUnit} is called. This function gets the meta-attributes name of the \texttt{RelationalTable} and then create an instance of the meta-classe \texttt{ClassUnit}. \texttt{ClassUnit} is a meta-class that represents user-defined classes in object-oriented languages~\cite{5328801}. In line 4, the function \texttt{createDataElement} is executed. This function obtains the all columns of the \texttt{RelationalTable} and then create an instance of the meta-classe \texttt{DataElement} which represent attributes in the KDM. In line 5 the function \texttt{createMethodUnit} is carried out. This function is similar to the last one, however, instead of attributes, \texttt{gets} and \texttt{sets} are created. These methods are represented by instances of the meta-classe \texttt{MethodUnit} which represents member functions owned by a \texttt{ClassUnit}.
 
 \begin{figure}
 \centering
@@ -376,7 +375,7 @@ Services are entities that are either annotated with @Path or have at least one 
   \includegraphics[scale=0.78]{figuras/alg}
 \end{figure}
 
-Afterwards, the services must be indeed created. As for we used the Facade Pattern~\cite{Gamma1994}, see Figure~\ref{fig:activity_diagram} step \circled{\textbf{H}}. The Algorithm 1, lines 7-12 depicts how the services are created. Firstly, in line 7 the function \textit{createAbstractFacade} is called to instantiate a meta-classe \textit{ClassUnit} which represents the \textit{AbstractFacade} of each entity. Secondly, in line 8 shows the function \textit{createEntityFacade} that is also an instance of the \textit{ClassUnit} which now represents the service. Thirdly, in line 9 the function \textit{createCRUD} depicts that for each entity four methods are create, i.e., create, retrieve, update and delete. Fourthly, the functions \textit{createGeneralization} and \textit{createComposition} in line 10 and 11 depict that relationships of generalization and composition are created. Finally, in line 12 the function \textit{createEntityRESTFUL} is carried out. It is responsible to inject request method designator (@GET, @PUT, @POST, or @DELETE), see Figure~\ref{fig:activity_diagram} step \circled{\textbf{I}}.
+Afterwards, the services must be indeed created. As for we used the Facade Pattern~\cite{Gamma1994}, see Figure~\ref{fig:activity_diagram} step \circled{\textbf{H}}. The Algorithm 1, lines 7-12 depicts how the services are created. Firstly, in line 7 the function \texttt{createAbstractFacade} is called to instantiate a meta-classe \texttt{ClassUnit} which represents the \texttt{AbstractFacade} of each entity. Secondly, in line 8 shows the function \texttt{createEntityFacade} that is also create an instance of the \texttt{ClassUnit} which now represents the service. Thirdly, in line 9 the function \texttt{createCRUD} depicts that for each entity four instance of meta-classe \texttt{MethodUnit} are create which represent the operations of the services, i.e., create, retrieve, update and delete. Fourthly, the functions \texttt{createGeneralization} and \texttt{createComposition} in line 10 and 11 depict that relationships of generalization and composition are created. Finally, in line 12 the function \texttt{createEntityRESTFUL} is carried out. It is responsible to inject request method designator (\texttt{@GET}, \texttt{@PUT}, \texttt{@POST}, and \texttt{@DELETE}), see Figure~\ref{fig:activity_diagram} step \circled{\textbf{I}}.
 
 In the last step a set of configuration files are created. These files store project configuration data or settings, see Figure~\ref{fig:activity_diagram} step \circled{\textbf{J}}.
 
@@ -561,7 +560,7 @@ After carrying the described approach, the new ProgradWeb was obtained. Then all
 
 According to the protocol proposed by Brereton \textit{et al}. in~\cite{case-study-template-2008} the data to be collected and the data sources must be defined before starting the execution of the case study to ensure the future repeatability.
 
-
+In Table~\ref{tab:precision_and_recall} is shown the precision and recall. There are nine columns in this table, the first six ones are abbreviated. ``SQL-S'' stands for SQL Statements, ``IS'' typifies Identified Statements, ``IT'' means Identified Table, ``CrRS'' stands for Created Relevant Services, ``CrNRS'' means Created Non-Relevant Services, and ``NCrRS'' stands for Non-Created Relevant Service.  
 
 \begin{table}
 	
@@ -621,25 +620,25 @@ FE
 
 \begin{table*}
 \centering	
-\begin{tabular}{|>{\centering}p{1.2cm}|>{\centering}p{1.6cm}|>{\centering}p{1.3cm}|>{\centering}p{1.5cm}|>{\centering}p{1.9cm}|>{\centering}p{2cm}|>{\centering}p{1.4cm}|>{\centering}p{1.4cm}|}
+\begin{tabular}{|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1.4cm}|>{\centering}p{1.4cm}|>{\centering}p{1.9cm}|}
 \hline 
-SQL Statement & Identified Statements (IS) & Identified Table (IT) & Created Relevant Services (CrRS) & Created Non-Relevant Services (CrNRS) & Non-Created Relevant Service (NCrRS) & Precision $\frac{CrRS}{CrRS + CrNRS}$ & Recall $\frac{CrRS}{CrRS + NCrRS}$\tabularnewline
+SQL-S & IS & IT & CrRS & CrNRS & NCrRS & Precision $\frac{CrRS}{CrRS + CrNRS}$ & Recall $\frac{CrRS}{CrRS + NCrRS}$& F1-Score $2\tfrac{precision\ast recall}{precision + recall}$\tabularnewline
 \hline 
 \hline 
-Select & 382 & 67 & 67 & 0 & 1 & 100\% & 98.52\%\tabularnewline
+Select & 382 & 67 & 67 & 0 & 1 & 100\% & 98.52\% &\tabularnewline
 \hline 
-Update & 83 & 40 & 38 & 2 & 3 & 95\% & 97.56\%\tabularnewline
+Update & 83 & 40 & 38 & 2 & 3 & 95\% & 97.56\% &\tabularnewline
 \hline 
-Delete & 33 & 20 & 15 & 5 & 2 & 75\% & 88.23\%\tabularnewline
+Delete & 33 & 20 & 15 & 5 & 2 & 75\% & 88.23\% &\tabularnewline
 \hline 
-Insert & 37 & 28 & 27 & 1 & 1 & 96.42\% & 96.42\% \tabularnewline
+Insert & 37 & 28 & 27 & 1 & 1 & 96.42\% & 96.42\%  &\tabularnewline
 \hline 
-Total & 535 & 155 & 147 & 8 & 7 &  & \tabularnewline
+Total & 535 & 155 & 147 & 8 & 7 &  & & \tabularnewline
 \hline 
-Mean & 133.75 & 38.75 & 36.75 & 2 & 1.75 & 91.60\% & \tabularnewline
-\hline 
+Mean & 133.75 & 38.75 & 36.75 & 2 & 1.75 & 91.60\% & &\tabularnewline
+\hline
 \end{tabular}
-
+\label{tab:precision_and_recall} 
 \end{table*}
 
 

@@ -1,9 +1,23 @@
 \begin{thebibliography}{}
 
+\bibitem[Baresi and Miraz, 2011]{5773392}
+Baresi, L. and Miraz, M. (2011).
+\newblock A component-oriented metamodel for the modernization of software
+  applications.
+\newblock In {\em Engineering of Complex Computer Systems (ICECCS), 2011 16th
+  IEEE International Conference on}, pages 179--187.
+
 \bibitem[Brereton et~al., 2008]{case-study-template-2008}
 Brereton, P., Kitchenham, B., and Budgen, D. (2008).
 \newblock Using a protocol template for case study planning.
 \newblock In {\em Proceedings of EASE 2008}.
+
+\bibitem[Bruneliere et~al., 2010]{Bruneliere:2010:MGE:1858996.1859032}
+Bruneliere, H., Cabot, J., Jouault, F., and Madiot, F. (2010).
+\newblock Modisco: a generic and extensible framework for model driven reverse
+  engineering.
+\newblock In {\em Proceedings of the IEEE/ACM international conference on
+  Automated software engineering}, ASE '10, pages 173--174. ACM.
 
 \bibitem[Canfora et~al., 2011]{Canfora2011}
 Canfora, G., Di~Penta, M., and Cerulo, L. (2011).
@@ -15,11 +29,32 @@ Chikofsky, E.~J. and Cross~II, J.~H. (1990).
 \newblock {Reverse Engineering and Design Recovery: A Taxonomy}.
 \newblock {\em IEEE Software}, 7(1):13--17.
 
+\bibitem[del Castillo et~al., 2009]{delCastillo:2009:PRP:1529282.1529753}
+del Castillo, R.~P., Garc\'{\i}a-Rodr\'{\i}guez, I., and Caballero, I. (2009).
+\newblock Preciso: a reengineering process and a tool for database
+  modernisation through web services.
+\newblock In {\em Proceedings of the 2009 ACM symposium on Applied Computing},
+  SAC '09, pages 2126--2133, New York, NY, USA. ACM.
+
+\bibitem[Frey et~al., 2012]{SMR:SMR582}
+Frey, S., Hasselbring, W., and Schnoor, B. (2012).
+\newblock Automatic conformance checking for migrating software systems to
+  cloud infrastructures and platforms.
+\newblock {\em Journal of Software: Evolution and Process}.
+
 \bibitem[Gamma et~al., 1994]{Gamma1994}
 Gamma, E., Helm, R., Johnson, R., and Vlissides, J. (1994).
 \newblock {\em Design Patterns: Elements of Reusable {Object-Oriented}
   Software}.
 \newblock Addison-Wesley Professional, 1 edition.
+
+\bibitem[Guzman et~al., 2007]{Guzman:2007:AAR:1339262.1339532}
+Guzman, I. G.-R.~d., Polo, M., and Piattini, M. (2007).
+\newblock An adm approach to reengineer relational databases towards web
+  services.
+\newblock In {\em Proceedings of the 14th Working Conference on Reverse
+  Engineering}, WCRE '07, pages 90--99, Washington, DC, USA. IEEE Computer
+  Society.
 
 \bibitem[Izquierdo and Molina, 2010]{5440163}
 Izquierdo, J. and Molina, J. (2010).
@@ -36,9 +71,17 @@ Jouault, F., Allilaire, F., Bezivin, J., and Kurtev, I. (2008).
 \newblock {Object Management Group (OMG) Unified Modeling Language (UML),
   Infrastructure, V2.1.2 - OMG Available Specification without Change Bars}.
 
-\bibitem[Perez-Castillo et~al., 2009]{5328801}
+\bibitem[Perez-Castillo et~al., 2009a]{1686216}
+Perez-Castillo, R., de~Guzman, I. G.-R., Avila-Garcia, O., and Piattini, M.
+  (2009a).
+\newblock On the use of adm to contextualize data on legacy source code for
+  software modernization.
+\newblock In {\em Proceedings of the 2009 16th Working Conference on Reverse
+  Engineering}, WCRE '09.
+
+\bibitem[Perez-Castillo et~al., 2009b]{5328801}
 Perez-Castillo, R., Garcia Rodriguez~de Guzman, I., Piattini, M., and Piattini,
-  M. (2009).
+  M. (2009b).
 \newblock On the use of adm to contextualize data on legacy source code for
   software modernization.
 \newblock In {\em Reverse Engineering, 2009. WCRE '09. 16th Working Conference
@@ -53,6 +96,12 @@ Putnam, L.~H. and Myers, W. (1991).
 \bibitem[Tilley and Smith, 1995]{Tilley95perspectiveson}
 Tilley, S. and Smith, D. (1995).
 \newblock Perspectives on legacy system reengineering.
+
+\bibitem[Ulrich and Newcomb, 2010]{Ulrich:2010:IST:1841736}
+Ulrich, W.~M. and Newcomb, P. (2010).
+\newblock {\em Information Systems Transformation: Architecture-Driven
+  Modernization Case Studies}.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA.
 
 \bibitem[Yin, 2002]{citeulike:598898}
 Yin, R.~K. (2002).

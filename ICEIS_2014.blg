@@ -3,53 +3,59 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ICEIS_2014.aux
 The style file: apalike.bst
 Database file #1: example.bib
-Warning--I didn't find a database entry for "Ulrich:2010:IST:1841736"
-Warning--I didn't find a database entry for "550"
-Warning--I didn't find a database entry for "1296153"
-Warning--I didn't find a database entry for "Schmidt06_ModelDrivenEngineering"
-Warning--I didn't find a database entry for "Fowler:2010:DSL:1809745"
-Warning--I didn't find a database entry for "1686216"
+Repeated entry---line 3133 of file example.bib
+ : @inproceedings{5773392
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3148 of file example.bib
+ : @inproceedings{Bruneliere:2010:MGE:1858996.1859032
+ :                                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3158 of file example.bib
+ : @inproceedings{delCastillo:2009:PRP:1529282.1529753
+ :                                                    ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in Tilley95perspectiveson
 Warning--empty publisher in citeulike:598898
-You've used 11 entries,
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            548 strings with 5576 characters,
-and the built_in function-call counts, 4035 in all, are:
-= -- 384
-> -- 171
-< -- 7
-+ -- 58
-- -- 56
-* -- 325
-:= -- 715
-add.period$ -- 31
-call.type$ -- 11
-change.case$ -- 82
-chr.to.int$ -- 11
-cite$ -- 13
-duplicate$ -- 165
-empty$ -- 281
-format.name$ -- 75
-if$ -- 787
-int.to.chr$ -- 1
+            584 strings with 7248 characters,
+and the built_in function-call counts, 7336 in all, are:
+= -- 721
+> -- 297
+< -- 13
++ -- 105
+- -- 98
+* -- 572
+:= -- 1243
+add.period$ -- 55
+call.type$ -- 18
+change.case$ -- 137
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 318
+empty$ -- 521
+format.name$ -- 128
+if$ -- 1487
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 13
-newline$ -- 56
-num.names$ -- 33
-pop$ -- 87
+missing$ -- 21
+newline$ -- 91
+num.names$ -- 54
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 139
 quote$ -- 0
-skip$ -- 122
+skip$ -- 238
 stack$ -- 0
-substring$ -- 221
-swap$ -- 18
-text.length$ -- 1
+substring$ -- 433
+swap$ -- 61
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 100
 warning$ -- 2
-while$ -- 29
+while$ -- 54
 width$ -- 0
-write$ -- 136
-(There were 8 warnings)
+write$ -- 234
+(There were 3 error messages)

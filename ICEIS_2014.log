@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 AUG 2013 17:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 AUG 2013 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -780,10 +780,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 1 undefined on input 
-line 58.
-
-
 Underfull \hbox (badness 3849) in paragraph at lines 58--59
 []\OT1/ptm/m/n/10 In this con-text, OMG (Ob-ject Man-age-ment
  []
@@ -797,265 +793,278 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
 
-
-LaTeX Warning: Citation `550' on page 2 undefined on input line 83.
-
-
-LaTeX Warning: Citation `1296153' on page 2 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Schmidt06_ModelDrivenEngineering' on page 2 undefined 
-on input line 88.
-
-
-LaTeX Warning: Citation `Fowler:2010:DSL:1809745' on page 2 undefined on input 
-line 90.
-
-
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 2 undefined on input 
-line 94.
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 94--95
+Underfull \hbox (badness 4254) in paragraph at lines 92--93
 \OT1/ptm/m/n/10 Nowadays, re-searchers have been shifted from
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 94--95
+Underfull \hbox (badness 3375) in paragraph at lines 92--93
 \OT1/ptm/m/n/10 the typ-i-cal refac-tor-ing pro-cess to the so-called
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 3590) in paragraph at lines 92--93
+\OT1/ptm/m/n/10 Architecture-Driven Mod-ern-iza-tion (ADM) (Frey
+ []
 
- [2]
-<figuras/Fonte_horse_shoe.pdf, id=17, 578.66158pt x 243.39452pt>
+<figuras/Fonte_horse_shoe.pdf, id=14, 578.66158pt x 243.39452pt>
 File: figuras/Fonte_horse_shoe.pdf Graphic file (type pdf)
 
 <use figuras/Fonte_horse_shoe.pdf>
-Package pdftex.def Info: figuras/Fonte_horse_shoe.pdf used on input line 100.
+Package pdftex.def Info: figuras/Fonte_horse_shoe.pdf used on input line 98.
 (pdftex.def)             Requested size: 214.10143pt x 90.05455pt.
 
-Overfull \hbox (0.687pt too wide) in paragraph at lines 100--101
+Overfull \hbox (0.687pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 3 undefined on input 
-line 101.
-
-
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 3 undefined on input 
-line 101.
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 108--109
+[2 <./figuras/Fonte_horse_shoe.pdf>]
+Underfull \hbox (badness 1348) in paragraph at lines 106--107
 []\OT1/ptm/m/n/10 In or-der to per-form such steps, ADM in-tro-
  []
 
-
-LaTeX Warning: Citation `1686216' on page 3 undefined on input line 115.
-
-
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 3 undefined on input 
-line 115.
-
-<figuras/kdm.pdf, id=18, 378.41376pt x 198.7425pt>
+<figuras/kdm.pdf, id=70, 378.41376pt x 198.7425pt>
 File: figuras/kdm.pdf Graphic file (type pdf)
  <use figuras/kdm.pdf>
-Package pdftex.def Info: figuras/kdm.pdf used on input line 120.
+Package pdftex.def Info: figuras/kdm.pdf used on input line 118.
 (pdftex.def)             Requested size: 219.48012pt x 115.27072pt.
 
-Overfull \hbox (6.06569pt too wide) in paragraph at lines 120--121
+Overfull \hbox (6.06569pt too wide) in paragraph at lines 118--119
  [][] 
  []
 
-
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 3 undefined on input 
-line 121.
-
-
-LaTeX Warning: Citation `Ulrich:2010:IST:1841736' on page 3 undefined on input 
-line 121.
-
-<figuras/AllProcess4.pdf, id=19, 703.62875pt x 452.69125pt>
+<figuras/AllProcess4.pdf, id=71, 675.52374pt x 452.69125pt>
 File: figuras/AllProcess4.pdf Graphic file (type pdf)
 
 <use figuras/AllProcess4.pdf>
-Package pdftex.def Info: figuras/AllProcess4.pdf used on input line 144.
-(pdftex.def)             Requested size: 477.99954pt x 256.07495pt.
+Package pdftex.def Info: figuras/AllProcess4.pdf used on input line 142.
+(pdftex.def)             Requested size: 478.01723pt x 256.07495pt.
 
-Overfull \hbox (28.40839pt too wide) in paragraph at lines 144--145
+Overfull \hbox (28.42607pt too wide) in paragraph at lines 142--143
  [][] 
  []
 
-[3 <./figuras/Fonte_horse_shoe.pdf> <./figuras/kdm.pdf>]
-Underfull \hbox (badness 1546) in paragraph at lines 155--156
+
+Underfull \hbox (badness 1546) in paragraph at lines 153--154
 \OT1/ptm/m/n/10 databases can de-com-posed into ser-vices. More
  []
 
-[4 <./figuras/AllProcess4.pdf>]
+[3 <./figuras/kdm.pdf>]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 177.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 175.
 
-
+ [4 <./figuras/AllProcess4.pdf>]
 <figuras/JavaMOdelNovo.pdf, id=222, 309.155pt x 334.24875pt>
 File: figuras/JavaMOdelNovo.pdf Graphic file (type pdf)
 
 <use figuras/JavaMOdelNovo.pdf>
-Package pdftex.def Info: figuras/JavaMOdelNovo.pdf used on input line 234.
+Package pdftex.def Info: figuras/JavaMOdelNovo.pdf used on input line 232.
 (pdftex.def)             Requested size: 228.77582pt x 247.34529pt.
 
-Overfull \hbox (15.36139pt too wide) in paragraph at lines 234--235
+Overfull \hbox (15.36139pt too wide) in paragraph at lines 232--233
  [][] 
  []
 
-[5 <./figuras/JavaMOdelNovo.pdf>]
-<figuras/SQL92Novo.pdf, id=242, 290.08376pt x 372.39125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figuras/SQL92Novo.pdf, id=223, 290.08376pt x 372.39125pt>
 File: figuras/SQL92Novo.pdf Graphic file (type pdf)
 
 <use figuras/SQL92Novo.pdf>
-Package pdftex.def Info: figuras/SQL92Novo.pdf used on input line 244.
+Package pdftex.def Info: figuras/SQL92Novo.pdf used on input line 242.
 (pdftex.def)             Requested size: 217.56227pt x 279.29274pt.
 
-Overfull \hbox (4.14784pt too wide) in paragraph at lines 244--245
+Overfull \hbox (4.14784pt too wide) in paragraph at lines 242--243
  [][] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 251.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 249.
 
-
-Underfull \hbox (badness 2088) in paragraph at lines 263--265
-\OT1/ptm/m/n/10 con-sist of trans-form-ing them into KDM, which
- []
-
-<figuras/KDM-Program-Layer.pdf, id=243, 317.185pt x 384.43625pt>
+[5 <./figuras/JavaMOdelNovo.pdf> <./figuras/SQL92Novo.pdf>]
+<figuras/KDM-Program-Layer.pdf, id=260, 317.185pt x 384.43625pt>
 File: figuras/KDM-Program-Layer.pdf Graphic file (type pdf)
 
 <use figuras/KDM-Program-Layer.pdf>
-Package pdftex.def Info: figuras/KDM-Program-Layer.pdf used on input line 270.
+Package pdftex.def Info: figuras/KDM-Program-Layer.pdf used on input line 268.
 (pdftex.def)             Requested size: 222.02797pt x 269.10353pt.
 
-Overfull \hbox (8.61354pt too wide) in paragraph at lines 270--271
+Overfull \hbox (8.61354pt too wide) in paragraph at lines 268--269
  [][] 
  []
-
-[6 <./figuras/SQL92Novo.pdf> <./figuras/KDM-Program-Layer.pdf>]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 293.
-
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlptm.fd
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 293.
-
-<figuras/KDM-Data-Layer.pdf, id=279, 254.9525pt x 234.8775pt>
-File: figuras/KDM-Data-Layer.pdf Graphic file (type pdf)
-
-<use figuras/KDM-Data-Layer.pdf>
-Package pdftex.def Info: figuras/KDM-Data-Layer.pdf used on input line 316.
-(pdftex.def)             Requested size: 198.86214pt x 183.2037pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
-[]\OT1/ptm/m/n/10 The sec-ond trans-for-ma-tion \OT1/ptm/m/it/10 SQLMod-
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 367--368
-\OT1/ptm/m/n/10 The goal of this phase is to anal-y-sis the mod-
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 371--372
-[]\OT1/ptm/m/n/10 Services are en-ti-ties that are ei-ther an-no-tated
- []
-
-[7 <./figuras/KDM-Data-Layer.pdf>]
-<figuras/alg.pdf, id=301, 253.19594pt x 182.05516pt>
-File: figuras/alg.pdf Graphic file (type pdf)
- <use figuras/alg.pdf>
-Package pdftex.def Info: figuras/alg.pdf used on input line 376.
-(pdftex.def)             Requested size: 197.49202pt x 142.00244pt.
-
-Underfull \vbox (badness 2103) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 440.
- [8 <./figuras/alg.pdf>]
-Underfull \hbox (badness 5667) in paragraph at lines 464--465
-[]\OT1/ptm/m/n/10 We de-vised a proof-of-concept im-ple-men-ta-
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 468--470
-\OT1/ptm/m/n/10 Mod-el-ing Frame-work (EMF)[] to cre-ate the SQL
- []
-
-<Figuras/Arquitetura_da_Ferramenta.pdf, id=338, 299.1175pt x 247.92625pt>
-File: Figuras/Arquitetura_da_Ferramenta.pdf Graphic file (type pdf)
-
-<use Figuras/Arquitetura_da_Ferramenta.pdf>
-Package pdftex.def Info: Figuras/Arquitetura_da_Ferramenta.pdf used on input li
-ne 474.
-(pdftex.def)             Requested size: 179.47188pt x 148.7569pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 5105) in paragraph at lines 480--481
+Underfull \hbox (badness 1735) in paragraph at lines 275--276
+\OT1/ptm/m/n/10 tion Lan-guage) (Jouault et al., 2008) to re-al-ize
+ []
+
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 291.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <6> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 291.
+
+<figuras/KDM-Data-Layer.pdf, id=261, 254.9525pt x 234.8775pt>
+File: figuras/KDM-Data-Layer.pdf Graphic file (type pdf)
+
+<use figuras/KDM-Data-Layer.pdf>
+Package pdftex.def Info: figuras/KDM-Data-Layer.pdf used on input line 314.
+(pdftex.def)             Requested size: 198.86214pt x 183.2037pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./figuras/KDM-Program-Layer.pdf>]
+Underfull \hbox (badness 1406) in paragraph at lines 366--367
+\OT1/ptm/m/n/10 The goal of this phase is to anal-y-sis the mod-
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 370--371
+\OT1/ptm/m/n/10 long-ing to the meta-model \OT1/pcr/m/n/10 KDMData\OT1/ptm/m/n/
+10 . Af-ter, in
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 370--371
+\OT1/ptm/m/n/10 line 3, the func-tion \OT1/pcr/m/n/10 createClassUnit \OT1/ptm/
+m/n/10 is called.
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 370--371
+\OT1/ptm/m/n/10 oriented lan-guages (Perez-Castillo et al., 2009b).
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 370--371
+\OT1/ptm/m/n/10 e-cuted. This func-tion ob-tains the all columns
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 370--371
+\OT1/ptm/m/n/10 of the \OT1/pcr/m/n/10 RelationalTable \OT1/ptm/m/n/10 and then
+ cre-ate an in-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 370--371
+\OT1/ptm/m/n/10 tion is sim-i-lar to the last one, how-ever, in-stead
+ []
+
+<figuras/alg.pdf, id=282, 253.19594pt x 182.05516pt>
+File: figuras/alg.pdf Graphic file (type pdf)
+ <use figuras/alg.pdf>
+Package pdftex.def Info: figuras/alg.pdf used on input line 375.
+(pdftex.def)             Requested size: 197.49202pt x 142.00244pt.
+
+[7 <./figuras/KDM-Data-Layer.pdf>]
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 439.
+
+Underfull \hbox (badness 5667) in paragraph at lines 463--464
+[]\OT1/ptm/m/n/10 We de-vised a proof-of-concept im-ple-men-ta-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 467--469
+\OT1/ptm/m/n/10 Mod-el-ing Frame-work (EMF)[] to cre-ate the SQL
+ []
+
+[8 <./figuras/alg.pdf>]
+<Figuras/Arquitetura_da_Ferramenta.pdf, id=340, 299.1175pt x 247.92625pt>
+File: Figuras/Arquitetura_da_Ferramenta.pdf Graphic file (type pdf)
+
+<use Figuras/Arquitetura_da_Ferramenta.pdf>
+Package pdftex.def Info: Figuras/Arquitetura_da_Ferramenta.pdf used on input li
+ne 473.
+(pdftex.def)             Requested size: 179.47188pt x 148.7569pt.
+
+Underfull \hbox (badness 5105) in paragraph at lines 479--480
 []\OT1/ptm/b/n/10 A\OT1/ptm/m/n/10 Nother \OT1/ptm/b/n/10 T\OT1/ptm/m/n/10 ool 
 for \OT1/ptm/b/n/10 L\OT1/ptm/m/n/10 anguage \OT1/ptm/b/n/10 R\OT1/ptm/m/n/10 e
 cognition -
  []
 
 [9 <./Figuras/Arquitetura_da_Ferramenta.pdf>] [10]
-Overfull \hbox (2.38927pt too wide) in paragraph at lines 568--619
+
+Package caption Warning: \label without proper \caption on input line 641.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:precision_and_recall' on page 11 undefined on inp
+ut line 563.
+
+
+Overfull \hbox (2.38927pt too wide) in paragraph at lines 567--618
 [][] 
  []
 
 
-Overfull \hbox (1.3409pt too wide) in paragraph at lines 626--626
- []|\OT1/ptm/m/n/10 Identified 
+Overfull \hbox (0.99696pt too wide) in paragraph at lines 625--625
+ []|\OT1/ptm/m/n/10 CrNRS| 
  []
 
 
-Overfull \hbox (5.81122pt too wide) in paragraph at lines 626--626
+Overfull \hbox (0.99696pt too wide) in paragraph at lines 625--625
+ []|\OT1/ptm/m/n/10 NCrRS| 
+ []
+
+
+Overfull \hbox (5.81122pt too wide) in paragraph at lines 625--625
  []$| 
  []
 
 
-Overfull \hbox (5.81122pt too wide) in paragraph at lines 626--627
+Overfull \hbox (5.81122pt too wide) in paragraph at lines 625--625
  []$| 
  []
 
-(./ICEIS_2014.bbl [11]) [12] (./ICEIS_2014.aux) ) 
+
+Overfull \hbox (4.99826pt too wide) in paragraph at lines 625--626
+ \OT1/ptmcm/m/n/10 2[]$| 
+ []
+
+(./ICEIS_2014.bbl [11]) [12] (./ICEIS_2014.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14228 strings out of 493488
- 253933 string characters out of 3141326
- 425817 words of memory out of 3000000
- 17180 multiletter control sequences out of 15000+200000
- 63496 words of font info for 135 fonts, out of 3000000 for 9000
+ 14232 strings out of 493488
+ 254031 string characters out of 3141326
+ 397817 words of memory out of 3000000
+ 17183 multiletter control sequences out of 15000+200000
+ 63502 words of font info for 136 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,13n,55p,2052b,1186s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/c
-ourier/ucrr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/courier/u
-crro8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ICEIS_2014.pdf (12 pages, 617857 bytes).
+ 56i,14n,55p,2052b,1400s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2012/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/tim
+es/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on ICEIS_2014.pdf (12 pages, 622387 bytes).
 PDF statistics:
  398 PDF objects out of 1000 (max. 8388607)
  252 compressed objects within 3 object streams
