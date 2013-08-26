@@ -17,45 +17,45 @@ Repeated entry---line 3158 of file example.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in Tilley95perspectiveson
 Warning--empty publisher in citeulike:598898
-You've used 18 entries,
+You've used 21 entries,
             1935 wiz_defined-function locations,
-            584 strings with 7248 characters,
-and the built_in function-call counts, 7336 in all, are:
-= -- 721
-> -- 297
-< -- 13
-+ -- 105
-- -- 98
-* -- 572
-:= -- 1243
-add.period$ -- 55
-call.type$ -- 18
-change.case$ -- 137
-chr.to.int$ -- 17
-cite$ -- 20
-duplicate$ -- 318
-empty$ -- 521
-format.name$ -- 128
-if$ -- 1487
+            602 strings with 7986 characters,
+and the built_in function-call counts, 8852 in all, are:
+= -- 872
+> -- 361
+< -- 16
++ -- 127
+- -- 120
+* -- 690
+:= -- 1484
+add.period$ -- 65
+call.type$ -- 21
+change.case$ -- 162
+chr.to.int$ -- 20
+cite$ -- 23
+duplicate$ -- 386
+empty$ -- 628
+format.name$ -- 153
+if$ -- 1809
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 21
-newline$ -- 91
-num.names$ -- 54
-pop$ -- 151
+missing$ -- 25
+newline$ -- 106
+num.names$ -- 63
+pop$ -- 184
 preamble$ -- 1
-purify$ -- 139
+purify$ -- 165
 quote$ -- 0
-skip$ -- 238
+skip$ -- 290
 stack$ -- 0
-substring$ -- 433
-swap$ -- 61
-text.length$ -- 5
+substring$ -- 529
+swap$ -- 83
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
+type$ -- 116
 warning$ -- 2
-while$ -- 54
+while$ -- 65
 width$ -- 0
-write$ -- 234
+write$ -- 276
 (There were 3 error messages)

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex ICEIS_2014"] 1377520308 "ICEIS_2014.aux" "ICEIS_2014.bbl" "ICEIS_2014" 1377521131
+["bibtex ICEIS_2014"] 1377529259 "ICEIS_2014.aux" "ICEIS_2014.bbl" "ICEIS_2014" 1377529995
   "./apalike.bst" 1003698706 21813 a6bc43259122f57cbcaa6ae34b78e94b ""
-  "ICEIS_2014.aux" 1377521130 2984 044fc6947618c9ae02dae5ab03bfcfe7 ""
+  "ICEIS_2014.aux" 1377529995 3392 e7a88ceb020686448d78d17fd25b5b87 ""
   "ICEIS_2014.bcf" 0 -1 0 ""
-  "example.bib" 1377516831 128522 059f34bf52ee6e47aa4c31b03fbd053a ""
+  "example.bib" 1377522048 129054 566bc99600f62c41307217d337568891 ""
   (generated)
   "ICEIS_2014.blg"
   "ICEIS_2014.bbl"
-["pdflatex"] 1377521130 "ICEIS_2014.tex" "ICEIS_2014.pdf" "ICEIS_2014" 1377521131
+["pdflatex"] 1377529994 "ICEIS_2014.tex" "ICEIS_2014.pdf" "ICEIS_2014" 1377529995
   "/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -122,9 +122,10 @@
   "/usr/local/texlive/2012/texmf-dist/tex/latex/tools/multicol.sty" 1312409015 26766 56c30c5bea3083b5a0d6fc2ce0063096 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
   "Figuras/Arquitetura_da_Ferramenta.pdf" 1369400070 17978 fba12421152fd54eb07bf20c20682aff ""
-  "ICEIS_2014.aux" 1377521130 2984 044fc6947618c9ae02dae5ab03bfcfe7 ""
-  "ICEIS_2014.bbl" 1377520308 4691 60fbee088a2f948ca10813c1b874da2b "bibtex ICEIS_2014"
-  "ICEIS_2014.tex" 1377521126 60939 a9e05fdb215ac6d880b0c34de303cf26 ""
+  "Figuras/BarPrecision_and_recall_1.pdf" 1377509296 77026 8fc41bbf1f147215b14ce6bc82dcea1d ""
+  "ICEIS_2014.aux" 1377529995 3392 e7a88ceb020686448d78d17fd25b5b87 ""
+  "ICEIS_2014.bbl" 1377529259 5618 034ad9949b0607cf0dd02c587c46b139 "bibtex ICEIS_2014"
+  "ICEIS_2014.tex" 1377529994 62925 399395ebaa204b68c84301ab98dd1aaf ""
   "SCITEPRESS.sty" 1364902428 5508 27fdbeff48f5a3bb528dc111c86e343c ""
   "apalike.sty" 1278500288 1152 7e0216a1c626932f944fefc448e30fd5 ""
   "article.cls" 1006200860 20842 1d83f5084dd6851bbb8f990661490551 ""

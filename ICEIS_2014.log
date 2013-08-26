@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 AUG 2013 14:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 AUG 2013 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,7 +631,11 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(./ICEIS_2014.aux)
+(./ICEIS_2014.aux
+
+LaTeX Warning: Label `fig:architecture' multiply defined.
+
+)
 \openout1 = `ICEIS_2014.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -643,8 +647,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 33.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 33
 .
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omspzccm.fd
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 33.
@@ -974,15 +977,21 @@ Package pdftex.def Info: figuras/alg.pdf used on input line 375.
 
 [7 <./figuras/KDM-Data-Layer.pdf>]
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 439.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 388.
 
-Underfull \hbox (badness 5667) in paragraph at lines 463--464
-[]\OT1/ptm/m/n/10 We de-vised a proof-of-concept im-ple-men-ta-
+Underfull \hbox (badness 7273) in paragraph at lines 465--468
+\OT1/ptm/m/n/10 We de-vised a proof-of-concept im-ple-men-ta-tion
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 467--469
-\OT1/ptm/m/n/10 Mod-el-ing Frame-work (EMF)[] to cre-ate the SQL
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
+\OT1/ptm/m/n/10 named Modernization-Integrated En-vi-ron-ment
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 465--468
+\OT1/ptm/m/n/10 since it pro-vides an \OT1/ptm/b/n/10 A\OT1/ptm/m/n/10 pplicati
+on \OT1/ptm/b/n/10 P\OT1/ptm/m/n/10 rogramming
  []
 
 [8 <./figuras/alg.pdf>]
@@ -991,67 +1000,97 @@ File: Figuras/Arquitetura_da_Ferramenta.pdf Graphic file (type pdf)
 
 <use Figuras/Arquitetura_da_Ferramenta.pdf>
 Package pdftex.def Info: Figuras/Arquitetura_da_Ferramenta.pdf used on input li
-ne 473.
-(pdftex.def)             Requested size: 179.47188pt x 148.7569pt.
+ne 472.
+(pdftex.def)             Requested size: 216.2453pt x 142.26518pt.
 
-Underfull \hbox (badness 5105) in paragraph at lines 479--480
+Overfull \hbox (2.83087pt too wide) in paragraph at lines 472--473
+ [][] 
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 478--479
 []\OT1/ptm/b/n/10 A\OT1/ptm/m/n/10 Nother \OT1/ptm/b/n/10 T\OT1/ptm/m/n/10 ool 
 for \OT1/ptm/b/n/10 L\OT1/ptm/m/n/10 anguage \OT1/ptm/b/n/10 R\OT1/ptm/m/n/10 e
 cognition -
  []
 
+
+Underfull \hbox (badness 2744) in paragraph at lines 486--487
+\OT1/ptm/m/n/10 Rich In-ter-net Ap-pli-ca-tions (Rodr[]^^Pguez-Echeverr[]^^Pa
+ []
+
 [9 <./Figuras/Arquitetura_da_Ferramenta.pdf>] [10]
-
-Package caption Warning: \label without proper \caption on input line 641.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:precision_and_recall' on page 11 undefined on inp
-ut line 563.
-
-
-Overfull \hbox (2.38927pt too wide) in paragraph at lines 567--618
-[][] 
+Underfull \hbox (badness 1484) in paragraph at lines 548--549
+\OT1/ptm/m/n/10 - then four steps are con-ducted to cre-ate a set
  []
 
 
-Overfull \hbox (0.99696pt too wide) in paragraph at lines 625--625
+Overfull \hbox (2.38927pt too wide) in paragraph at lines 566--618
+[][]
+ []
+
+
+Overfull \hbox (0.99696pt too wide) in paragraph at lines 626--626
  []|\OT1/ptm/m/n/10 CrNRS| 
  []
 
 
-Overfull \hbox (0.99696pt too wide) in paragraph at lines 625--625
+Overfull \hbox (0.99696pt too wide) in paragraph at lines 626--626
  []|\OT1/ptm/m/n/10 NCrRS| 
  []
 
 
-Overfull \hbox (5.81122pt too wide) in paragraph at lines 625--625
+Overfull \hbox (5.81122pt too wide) in paragraph at lines 626--626
  []$| 
  []
 
 
-Overfull \hbox (5.81122pt too wide) in paragraph at lines 625--625
+Overfull \hbox (5.81122pt too wide) in paragraph at lines 626--626
  []$| 
  []
 
 
-Overfull \hbox (4.99826pt too wide) in paragraph at lines 625--626
+Overfull \hbox (4.99826pt too wide) in paragraph at lines 626--627
  \OT1/ptmcm/m/n/10 2[]$| 
  []
 
-(./ICEIS_2014.bbl [11]) [12] (./ICEIS_2014.aux)
+<Figuras/BarPrecision_and_recall_1.pdf, id=362, 275.0275pt x 145.54375pt>
+File: Figuras/BarPrecision_and_recall_1.pdf Graphic file (type pdf)
 
-LaTeX Warning: There were undefined references.
+<use Figuras/BarPrecision_and_recall_1.pdf>
+Package pdftex.def Info: Figuras/BarPrecision_and_recall_1.pdf used on input li
+ne 652.
+(pdftex.def)             Requested size: 214.52058pt x 113.52365pt.
+
+Overfull \hbox (1.10616pt too wide) in paragraph at lines 652--653
+ [][] 
+ []
+
+(./ICEIS_2014.bbl [11 <./Figuras/BarPrecision_and_recall_1.pdf>]
+Underfull \hbox (badness 1122) in paragraph at lines 40--43
+[]\OT1/ptm/m/n/9 Demeyer, S., Ducasse, S., and Nier-strasz, O. (2002).
+ []
+
+[12]
+Underfull \hbox (badness 1515) in paragraph at lines 103--110
+[]\OT1/ptm/m/n/9 Rodr[]^^Pguez-Echeverr[]^^Pa, R., Cone-jero, J. M., Clemente,
+ []
+
+) [13
+
+] (./ICEIS_2014.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14232 strings out of 493488
- 254031 string characters out of 3141326
- 397817 words of memory out of 3000000
- 17183 multiletter control sequences out of 15000+200000
+ 14242 strings out of 493488
+ 254352 string characters out of 3141326
+ 398817 words of memory out of 3000000
+ 17192 multiletter control sequences out of 15000+200000
  63502 words of font info for 136 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,14n,55p,2052b,1400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,14n,55p,2052b,1396s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
@@ -1064,10 +1103,10 @@ fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
 1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on ICEIS_2014.pdf (12 pages, 622387 bytes).
+Output written on ICEIS_2014.pdf (13 pages, 699734 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
+ 424 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

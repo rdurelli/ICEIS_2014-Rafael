@@ -36,6 +36,11 @@ del Castillo, R.~P., Garc\'{\i}a-Rodr\'{\i}guez, I., and Caballero, I. (2009).
 \newblock In {\em Proceedings of the 2009 ACM symposium on Applied Computing},
   SAC '09, pages 2126--2133, New York, NY, USA. ACM.
 
+\bibitem[Demeyer et~al., 2002]{Demeyer&al2002}
+Demeyer, S., Ducasse, S., and Nierstrasz, O. (2002).
+\newblock {\em Object-Oriented Reengineering Patterns}.
+\newblock Morgan Kaufmann, San Francisco, CA, USA.
+
 \bibitem[Frey et~al., 2012]{SMR:SMR582}
 Frey, S., Hasselbring, W., and Schnoor, B. (2012).
 \newblock Automatic conformance checking for migrating software systems to
@@ -93,6 +98,16 @@ Putnam, L.~H. and Myers, W. (1991).
   Budget}.
 \newblock Prentice Hall Professional Technical Reference.
 
+\bibitem[Rodr\'{\i}guez-Echeverr\'{\i}a et~al.,
+  2012]{Rodriguez-Echeverria:2011:MLW:2186508.2186536}
+Rodr\'{\i}guez-Echeverr\'{\i}a, R., Conejero, J.~M., Clemente, P.~J., Preciado,
+  J.~C., and S\$\#225;nchez-Figueroa, F. (2012).
+\newblock Modernization of legacy web applications into rich internet
+  applications.
+\newblock In {\em Proceedings of the 11th international conference on Current
+  Trends in Web Engineering}, pages 236--250, Berlin, Heidelberg.
+  Springer-Verlag.
+
 \bibitem[Tilley and Smith, 1995]{Tilley95perspectiveson}
 Tilley, S. and Smith, D. (1995).
 \newblock Perspectives on legacy system reengineering.
@@ -102,6 +117,12 @@ Ulrich, W.~M. and Newcomb, P. (2010).
 \newblock {\em Information Systems Transformation: Architecture-Driven
   Modernization Case Studies}.
 \newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA.
+
+\bibitem[Wang et~al., 2009]{5319373}
+Wang, H., Shen, B., and Chen, C. (2009).
+\newblock Model-driven reengineering of database.
+\newblock In {\em Software Engineering, 2009. WCSE '09. WRI World Congress on},
+  volume~3, pages 113--117.
 
 \bibitem[Yin, 2002]{citeulike:598898}
 Yin, R.~K. (2002).

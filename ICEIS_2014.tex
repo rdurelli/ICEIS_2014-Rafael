@@ -382,7 +382,10 @@ In the last step a set of configuration files are created. These files store pro
 \subsection{Forward Engineering - FE} % (fold)
 \label{sub:forward_engineering}
 
-Forward Engineering (FE) is the process of bringing high-level abstractions to physical implementation of a system[ref]. This phase starts with the step \circled{\textbf{K}}, see Figure~\ref{fig:activity_diagram}. In this phase the restructured KDM model obtained in the \textit{Reestructuring} phase now is transformed to an instance of Unified Modeling Language (UML)~\cite{OMG}. 
+Forward Engineering (FE) is the process of bringing high-level abstractions to physical implementation of a system~\cite{Demeyer&al2002}. This phase starts with the step \circled{\textbf{K}}, see Figure~\ref{fig:activity_diagram}. In this phase the restructured KDM model obtained in the \textit{Reestructuring} phase now is transformed to an instance of Unified Modeling Language (UML)~\cite{OMG}. 
+
+
+Due space limitation in Listing~\ref{list:KDM2UML} is depicted just a chunk of the code written in ATL which is responsible to realize such transformation. In lines 4-11 are described a rule to transform the \textit{\texttt{Package}} from the source (KDM) to \textit{\texttt{Package}} of the target meta-model (UML). Lines 13-23 depict a rule to transform all \textit{\texttt{ClassUnit}} from the source (KDM) to \textit{\texttt{Class}} of UML. This rule copies the name of the \textit{\texttt{ClassUnit}}, all \textit{\texttt{memberUnit}}, all \textit{\texttt{methodUnit}} and also the relationships among the classes. After transform \textit{\texttt{ClassUnit}} to \textit{\texttt{Class}}, all \textit{\texttt{memberUnit}} and \textit{\texttt{methodUnit}} must be transformed. The former, is depicted in rule \textit{\texttt{MemberUnit2Property}}, lines 24-33. In lines 28-31 the \textit{\texttt{Property}}'s name and type are assigned. The latter, is shown in rule \textit{\texttt{MethodUnit2Operation}} in which lines 38-47 depict how all \texttt{MethodUnits} are properly transformed to \texttt{Operation}.  
 
 \begin{lstlisting}[caption=Chunk of KDM2UML, label=list:KDM2UML, frame=lrtb, basicstyle=\tiny]
 module KDM2UML;
@@ -436,7 +439,6 @@ rule MethodUnit2Operation {
 }
 \end{lstlisting}
 
-Due space limitation in Listing~\ref{list:KDM2UML} is depicted just a chunk of the code written in ATL which is responsible to realize such transformation. In lines 4-11 are described a rule to transform the \textit{\texttt{Package}} from the source (KDM) to \textit{\texttt{Package}} of the target meta-model (UML). Lines 13-23 depict a rule to transform all \textit{\texttt{ClassUnit}} from the source (KDM) to \textit{\texttt{Class}} of UML. This rule copies the name of the \textit{\texttt{ClassUnit}}, all \textit{\texttt{memberUnit}}, all \textit{\texttt{methodUnit}} and also the relationships among the classes. After transform \textit{\texttt{ClassUnit}} to \textit{\texttt{Class}}, all \textit{\texttt{memberUnit}} and \textit{\texttt{methodUnit}} must be transformed. The former, is depicted in rule \textit{\texttt{MemberUnit2Property}}, lines 24-33. In lines 28-31 the \textit{\texttt{Property}}'s name and type are assigned. The latter, is shown in rule \textit{\texttt{MethodUnit2Operation}} in which lines 38-47 depict how all \texttt{MethodUnits} are properly transformed to \texttt{Operation}.  
 
   and etc are set  are shown a rule that transforms all \textit{memberUnit}, which represents in KDM both association and attributes,      
 
@@ -460,38 +462,35 @@ Due space limitation in Listing~\ref{list:KDM2UML} is depicted just a chunk of t
  %the models created previously in order to automate the devising of services. A set of rules are applied into the models created earlier in order to automate the devising of services. 
 \section{\uppercase{Proof-of-concept implementation}}\label{sec:proof_of_concept_implementation}
 
-We devised a proof-of-concept implementation named Modernization-Integrated Environment (MIE). 
-
-
-%In this section is shown the architecture of the ProLine-RM as well as an description of its components. 
+\noindent We devised a proof-of-concept implementation named Modernization-Integrated Environment (MIE).
 In Figure~\ref{fig:architecture} is depicted the architecture of MIE. As shown in this figure, we devised it on the top of the Eclipse Platform and used both Java and Groovy as programming language. Moreover, we used Eclipse Modeling Framework (EMF)\footnote{http://www.eclipse.org/modeling/emf/} to create the SQL model, the SOA model and to reutilize the UML model. MoDisco is used by the infrastructure since it provides an
 \textbf{A}pplication \textbf{P}rogramming \textbf{I}nterface - (API) to easily access the KDM model. 
 
 \begin{figure}[!h]
 \centering
   % Requires \usepackage{graphicx}
- \includegraphics[scale=0.6]{Figuras/Arquitetura_da_Ferramenta}
+ \includegraphics[width=7.6cm, height=5cm]{Figuras/Arquitetura_da_Ferramenta}
 \caption{Architecture of Modernization-Integrated Environment.}
 \label{fig:architecture}
 \end{figure}
 
 
-\textbf{A}Nother \textbf{T}ool for \textbf{L}anguage \textbf{R}ecognition -  (ANTLR) is used herein to create parsers to obtain information related to the legacy system's artifacts. Therefore, two parser were developed: (\textit{i}) the first takes as input a Java grammar and generates as output an AST and (\textit{ii}) the second parser is an extension of the first one to identify SQL embedded in the legacy system's source code, i.e., it takes as input a Java source-code and generates as output an AST which contains informations such as, tables, columns, primary keys, etc. Then, to transform these ASTs in PSMs we used an API provided by EMF. Afterwards, all the transformations M2M are done by \textbf{A}tlas \textbf{T}ransformation \textbf{L}anguage - ATL, which provides ways to produce a set of target models from a set of source models. Therefore, ATL is used to transform the PSMs to conform the KDM specification and to transform the improved KDM to an UML that represents the target systems. 
+\textbf{A}Nother \textbf{T}ool for \textbf{L}anguage \textbf{R}ecognition -  (ANTLR)\footnote{http://www.antlr.org/} is used herein to create parsers to obtain information related to the legacy system's artifacts. Therefore, two parser were developed: (\textit{i}) the first takes as input a Java grammar and generates as output an AST and (\textit{ii}) the second parser is an extension of the first one to identify SQL embedded in the legacy system's source code, i.e., it takes as input a Java source-code and generates as output an AST which contains informations such as, tables, columns, primary keys, etc. Then, to transform these ASTs in PSMs we used an API provided by EMF. Afterwards, all the transformations M2M are done by \textbf{A}tlas \textbf{T}ransformation \textbf{L}anguage - ATL, which provides ways to produce a set of target models from a set of source models. Therefore, ATL is used to transform the PSMs to conform the KDM specification and to transform the improved KDM to an UML that represents the target systems. 
 
-Finally, in order to transform this last model in a set of physical artifacts (source code), i.e., model-to-code transformations, Acceleo was used, which is based on textual template approach. A template can be thought of as the target text with holes for variable parts. The holes contain metacode which is run at template instantiation time to compute the variable parts. Furthermore, we have used Java Persistence API (JPA) 2.0 to deal with the way relational data is mapped to Java objects. Similarly, RESTful API have been used to implements SOA artifacts. 
+Finally, in order to transform this last model in a set of physical artifacts (source code), i.e., model-to-code transformations, Acceleo\footnote{http://www.eclipse.org/acceleo/} was used, which is based on textual template approach. A template can be thought of as the target text with holes for variable parts. The holes contain metacode which is run at template instantiation time to compute the variable parts. Furthermore, we have used Java Persistence API (JPA) 2.0 to deal with the way relational data is mapped to Java objects. Similarly, RESTful API have been used to implements SOA artifacts. 
 
 \section{\uppercase{Related Work}}\label{sec:related_work}
 
-Several research works have been proposed by the academic community are related to the concepts discussed in this paper.
+\noindent Several research works have been proposed by the academic community are related to the concepts discussed in this paper.
 
-Modernization of Legacy Web Applications into Rich Internet Applications [ref] proposes a approach for systematic and semiautomatic modernization of legacy Web applications in rich interfaces applications. In this process, the MDD principles are applied and the use of ADM specifications for the generation of rich interfaces from the source code of navigation and presentation layers of legacy web applications. The proposed approach differs from this work by having a more general purpose and are not intended to only a single type of applications, such as Web applications. In addition, the proposed approach offers the possibility to use the database in the process of reengineering.
+Modernization of Legacy Web Applications into Rich Internet Applications~\cite{Rodriguez-Echeverria:2011:MLW:2186508.2186536} proposes a approach for systematic and semiautomatic modernization of legacy Web applications in rich interfaces applications. In this process, the MDD principles are applied and the use of ADM specifications for the generation of rich interfaces from the source code of navigation and presentation layers of legacy web applications. The proposed approach differs from this work by having a more general purpose and are not intended to only a single type of applications, such as Web applications. In addition, the proposed approach offers the possibility to use the database in the process of reengineering.
 
-Model-Driven Reengineering of Database [ref] presents a process to perform relational databases reengineering. The process is conducted through of repeated model transformations and divided into the stages of extraction and contextualization. In the extraction stage, a PSM is obtained from the database structure. In the contextualization stage, a PIM is generated from the PSM. As a result of the process, there are entity-relationship models and class diagrams. The proposed approach differs from this work by using object-relational mapping frameworks and metaprogramming techniques to obtain a model of the database structure, rather than using several model transformations, resulting in a more simple and faster way to extract knowledge from the database.
+Model-Driven Reengineering of Database~\cite{5319373}  presents a process to perform relational databases reengineering. The process is conducted through of repeated model transformations and divided into the stages of extraction and contextualization. In the extraction stage, a PSM is obtained from the database structure. In the contextualization stage, a PIM is generated from the PSM. As a result of the process, there are entity-relationship models and class diagrams. The proposed approach differs from this work by using object-relational mapping frameworks and metaprogramming techniques to obtain a model of the database structure, rather than using several model transformations, resulting in a more simple and faster way to extract knowledge from the database.
 
 
 \section{\uppercase{Case Study}}
 
-This section presents a case study to validate the proposed approach by applying it to a real-life legacy information system. As stated in Section~\ref{sec:proof_of_concept_implementation} we devised a proof of concept tool which implements our approach. Notice that the case study was carried out following the protocol for planning, conducting and reporting case studies proposed by Brereton \textit{et al}. in~\cite{case-study-template-2008} improving the rigor and validity of the study. The next subsections show more details about the main phase defined in this protocol, such as: background, design, case selection, case study procedure, data collection, analysis and interpretation and validity evaluation.
+\noindent This section presents a case study to validate the proposed approach by applying it to a real-life legacy information system. As stated in Section~\ref{sec:proof_of_concept_implementation} we devised a proof of concept tool which implements our approach. Notice that the case study was carried out following the protocol for planning, conducting and reporting case studies proposed by Brereton \textit{et al}. in~\cite{case-study-template-2008} improving the rigor and validity of the study. The next subsections show more details about the main phase defined in this protocol, such as: background, design, case selection, case study procedure, data collection, analysis and interpretation and validity evaluation.
 
 
 \subsection{Background} % (fold)
@@ -504,8 +503,6 @@ Therefore, taking into account the objects and purpose of the study, it was defi
 \begin{itemize}
 	\item \textbf{RQ$_1$}: Can the proposed approach obtain embedded SQL statement from legacy systems to effectively create services by using RESTFULL?
 	\item \textbf{RQ$_2$}: Is the proposed approach efficient as compared to the classic life cycle of the software? 
-
-	to be scaled to any legacy system?
 \end{itemize}
 
 The former question, \textbf{RQ$_1$}, verifies if the approach can obtain embedded SQL statement in a legacy system. In addition, \textbf{RQ$_1$} also assesses whether the identified SQL statements can be effectively transformed to services. The latter question, \textbf{RQ$_2$} aims to verify the efficiency of the proposed approach when compared to the classic life cycle of the software.
@@ -536,7 +533,7 @@ P = productivity parameter
 \subsection{Case Selection} % (fold)
 \label{sub:case_selection}
 
-In this section is described the suitable case that was chosen to be studied. Some criteria were applied to select the suitable case, as follows: (\textit{i}) it must be an enterprise system, (\textit{ii}) it must be a Java-based system, (\textit{iii}) it must be a legacy system and (\textit{iv}) it must be of a size not less than 10 KLOC. After applying these criteria we chose ProgradWeb\footnote{https://progradweb.ufscar.br/progradweb/} of Federal University of S\~ao Carlos (UFSCar). ProgradWeb is an academic system on the Web for managing information about teachers, students and undergraduate programs of UFSCar. 
+In this section is described the suitable case that was chosen to be studied. Some criteria were applied to select the suitable case, as follows: (\textit{i}) it must be an enterprise system, (\textit{ii}) it must be a Java-based system, (\textit{iii}) it must use embedded SQL statements, (\textit{iv}) it must be a legacy system and (\textit{v}) it must be of a size not less than 10 KLOC. After applying these criteria we chose ProgradWeb\footnote{https://progradweb.ufscar.br/progradweb/} of Federal University of S\~ao Carlos (UFSCar). ProgradWeb is an academic system on the Web for managing information about teachers, students and undergraduate programs of UFSCar. 
 
 The original architecture of the system was developed using Java Servlets and web pages in the Java Server Pages (JSP) language. The system runs on a server configured with Apache Tomcat\footnote{http://tomcat.apache.org/} and connects with a PostgreSQL database\footnote{http://www.postgresql.org/}, using the API Java Database Connectivity (JDBC). However, over time and the appearance of new requirements, the system maintenance became expensive, requiring its reengineering.
 
@@ -545,25 +542,27 @@ The original architecture of the system was developed using Java Servlets and we
 
 In this section is shown how the execution of the study was planned. Notice that the execution was aided by the tool developed to support the proposed approach, see Section~\ref{sec:proof_of_concept_implementation}. The case study was carried out in a machine with an Intel Core I5 CPU 2.5GHz, 4GB of physical memory running Mac OS X 10.8.4. 
 
-As stated in Section~\ref{sec:proposed_approach} the approach proposed herein starts with the RE. Firstly, discovering of knowledge must be carried out. As described earlier two parser are executed to obtain this knowledge: (\textit{i}) the first parser takes as input the ProgradWeb's source-code and generates as output an AST and (\textit{ii}) the second one is an extension of the first one; and its aims is to identify SQL embedded in the legacy system's source-code, i.e., it takes as input a Java source-code and generates as output an AST which contains informations such as, tables, columns, primary keys, etc. Secondly, the ASTs obtained are transformed in two PSMs, the Java PSM and the SQL PSM. Such transformations are executed by using an API provided by EMF. Thirdly, these PSMs are transformed to PIMs to be in conform to the KDM standardization, i.e., the Java model to KDM Code and SQL model to KDM Data. They are transformed by means of rules written in ATL. 
+As stated in Section~\ref{sec:proposed_approach} the approach proposed herein starts with the RE. Firstly, discovering of knowledge must be carried out. As described earlier two parser are executed to obtain this knowledge: (\textit{i}) the first parser takes as input the ProgradWeb's source-code and generates as output an AST and (\textit{ii}) the second one is an extension of the first one; and its aims is to identify embedded SQL in the legacy system's source-code, i.e., it takes as input a Java source-code and generates as output an AST which contains informations such as, tables, columns, primary keys, etc. Secondly, the ASTs obtained are transformed in two PSMs, the Java PSM and the SQL PSM. Such transformations are executed by using an API provided by EMF. Thirdly, these PSMs are transformed to PIMs to be in conform to the KDM standardization, i.e., the Java model to \texttt{KDMCode} and SQL model to \texttt{KDMData}. They are transformed by means of rules written in ATL. 
 
 
-By using the KDM models obtained the next phase starts. in this phase is carried out an algorithm which takes as input both models \texttt{KDMCode} and \texttt{KDMData} - then four steps are conducted to create a set of services, see Algorithm 1. First, entities are created in the KDMCode (\texttt{ClassUnit}, \texttt{DataElement} and \texttt{MethodUnit}) by using the information of the KDMData (\texttt{RelationalTable}, \texttt{ColumnSet}). Second, services (CRUDs) are created by using the design pattern Facade~\cite{Gamma1994}.
+By using the KDM models obtained the next phase starts where is carried out an algorithm which takes as input both models \texttt{KDMCode} and \texttt{KDMData} - then four steps are conducted to create a set of services, see Algorithm 1. First, entities are created in the \texttt{KDMCode} (\texttt{ClassUnit}, \texttt{DataElement} and \texttt{MethodUnit}) by using the information of the \texttt{KDMData} (\texttt{RelationalTable}, \texttt{ColumnSet}). Second, services (CRUDs) are created by using the design pattern Facade~\cite{Gamma1994}.
 
 The FE is started with the new KDM metamodels. ATL is also used in this phase to transform the KDM metamodel into both UML and SOA models. Finally, in order to transform these last models into physical artifacts (source-code) model-to-code transformations was applied. This is performed by mapping context models using a template-based approach to a corresponding
 programming language and automatically generating the implementation.
 
-After carrying the described approach, the new ProgradWeb was obtained. Then all embedded SQL statement, the created entities and the created services are collected according to the data collection plan. After that, the data collected previously is analysed and interpreted to draw conclusion to answer the research questions. Section x presents more information related to the results obtained from this case study.
+After carrying the described approach, the new ProgradWeb was obtained. Then all embedded SQL statement, the created entities and the created services are collected according to the data collection plan. Also, during the execution of the case study, we gathered the time that each step (see Figure~\ref{fig:activity_diagram}) used up. After that, the data collected previously is analyzed and interpreted to draw conclusion to answer the research questions. The next sections present more information related to the results obtained from this case study.
 
 \subsection{Data Collection} % (fold)
 \label{sub:data_collection}
 
-According to the protocol proposed by Brereton \textit{et al}. in~\cite{case-study-template-2008} the data to be collected and the data sources must be defined before starting the execution of the case study to ensure the future repeatability.
+According to the protocol proposed by Brereton \textit{et al}. in~\cite{case-study-template-2008} the data to be collected and the data sources must be defined before starting the execution of the case study to ensure the future repeatability. As stated in Section~\ref{sub:case_study_procedure} we gathered the time that each step during the execution of the case study. We also analyzed all identified embedded SQL statement, all created entities and the created services. By using these information gathered we can draw conclusion and answer the research questions. These information are arranged in both Table~\ref{tab:time_each_step} and Table~\ref{tab:precision_and_recall}. The first one depicts (\textit{i})  the phases of our approach, (\textit{ii}) each steps of our approach, (\textit{iii}) the time that each step took during the modernization of the legacy system, and (\textit{iv}) the sum of the time of each step. The second table has nine columns, the first six ones are abbreviated. ``SQL-S'' stands for SQL Statements, ``IS'' typifies Identified Statements, ``IT'' means Identified Table, ``CrRS'' stands for Created Relevant Services, ``CrNRS'' means Created Non-Relevant Services, and ``NCrRS'' stands for Non-Created Relevant Service. The last three columns depict the precision, recall and F1-Score. 
 
-In Table~\ref{tab:precision_and_recall} is shown the precision and recall. There are nine columns in this table, the first six ones are abbreviated. ``SQL-S'' stands for SQL Statements, ``IS'' typifies Identified Statements, ``IT'' means Identified Table, ``CrRS'' stands for Created Relevant Services, ``CrNRS'' means Created Non-Relevant Services, and ``NCrRS'' stands for Non-Created Relevant Service.  
+%The time that each step took is depicted in Table~\ref{tab:time_each_step} - and the precision and the recall of our approach is shown in Table~\ref{tab:precision_and_recall}. Table~\ref
+
+%In Table~\ref{tab:precision_and_recall} is shown the precision and recall. There are nine columns in this table, the first six ones are abbreviated. ``SQL-S'' stands for SQL Statements, ``IS'' typifies Identified Statements, ``IT'' means Identified Table, ``CrRS'' stands for Created Relevant Services, ``CrNRS'' means Created Non-Relevant Services, and ``NCrRS'' stands for Non-Created Relevant Service.  
 
 \begin{table}
-	
+\caption{Time gathered.}	
 \begin{tabular}{|c|c|c|}
 \hline 
 \multirow{8}{*}{\begin{sideways}
@@ -615,11 +614,13 @@ FE
 \multicolumn{2}{|c|}{\cellcolor{gray!25}TOTAL Modernization} & \cellcolor{gray!25}2 hours and 30'\tabularnewline
 \hline 
 \end{tabular}
+\label{tab:time_each_step}
 
 \end{table}
 
 \begin{table*}
-\centering	
+\centering
+\caption{Precision and Recall.}		
 \begin{tabular}{|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1.4cm}|>{\centering}p{1.4cm}|>{\centering}p{1.9cm}|}
 \hline 
 SQL-S & IS & IT & CrRS & CrNRS & NCrRS & Precision $\frac{CrRS}{CrRS + CrNRS}$ & Recall $\frac{CrRS}{CrRS + NCrRS}$& F1-Score $2\tfrac{precision\ast recall}{precision + recall}$\tabularnewline
@@ -641,6 +642,19 @@ Mean & 133.75 & 38.75 & 36.75 & 2 & 1.75 & 91.60\% & &\tabularnewline
 \label{tab:precision_and_recall} 
 \end{table*}
 
+\subsection{Analysis and Interpretation} % (fold)
+\label{sub:analysis_and_interpretation}
+
+
+\begin{figure}[!h]
+\centering
+  % Requires \usepackage{graphicx}
+ \includegraphics[scale=0.78]{Figuras/BarPrecision_and_recall_1}
+\caption{Architecture of Modernization-Integrated Environment.}
+\label{fig:architecture}
+\end{figure}
+
+% subsection analysis_and_interpretation (end)
 
 % subsection data_collection (end)
 % subsection design (end)
