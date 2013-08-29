@@ -92,6 +92,11 @@ Perez-Castillo, R., Garcia Rodriguez~de Guzman, I., Piattini, M., and Piattini,
 \newblock In {\em Reverse Engineering, 2009. WCRE '09. 16th Working Conference
   on}, pages 128--132.
 
+\bibitem[Pressman, 2001]{Pressman}
+Pressman, R.~S. (2001).
+\newblock {\em Software Engineering: A Practitioner's Approach}.
+\newblock McGraw-Hill Higher Education, 5th edition.
+
 \bibitem[Putnam and Myers, 1991]{Putnam:1991:MER:574087}
 Putnam, L.~H. and Myers, W. (1991).
 \newblock {\em Measures for Excellence: Reliable Software on Time, within
@@ -111,6 +116,11 @@ Rodr\'{\i}guez-Echeverr\'{\i}a, R., Conejero, J.~M., Clemente, P.~J., Preciado,
 \bibitem[Tilley and Smith, 1995]{Tilley95perspectiveson}
 Tilley, S. and Smith, D. (1995).
 \newblock Perspectives on legacy system reengineering.
+
+\bibitem[Tisi et~al., 2011]{ATLlazy}
+Tisi, M., Martínez, S., Jouault, F., and Cabot, J. (2011).
+\newblock Lazy execution of model-to-model transformations.
+\newblock {\em Springer Berlin Heidelberg}.
 
 \bibitem[Ulrich and Newcomb, 2010]{Ulrich:2010:IST:1841736}
 Ulrich, W.~M. and Newcomb, P. (2010).

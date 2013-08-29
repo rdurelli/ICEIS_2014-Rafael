@@ -3,59 +3,59 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ICEIS_2014.aux
 The style file: apalike.bst
 Database file #1: example.bib
-Repeated entry---line 3133 of file example.bib
+Repeated entry---line 3145 of file example.bib
  : @inproceedings{5773392
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3148 of file example.bib
+Repeated entry---line 3160 of file example.bib
  : @inproceedings{Bruneliere:2010:MGE:1858996.1859032
  :                                                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3158 of file example.bib
+Repeated entry---line 3170 of file example.bib
  : @inproceedings{delCastillo:2009:PRP:1529282.1529753
  :                                                    ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in Tilley95perspectiveson
 Warning--empty publisher in citeulike:598898
-You've used 21 entries,
+You've used 23 entries,
             1935 wiz_defined-function locations,
-            602 strings with 7986 characters,
-and the built_in function-call counts, 8852 in all, are:
-= -- 872
-> -- 361
-< -- 16
-+ -- 127
-- -- 120
-* -- 690
-:= -- 1484
-add.period$ -- 65
-call.type$ -- 21
-change.case$ -- 162
-chr.to.int$ -- 20
-cite$ -- 23
-duplicate$ -- 386
-empty$ -- 628
-format.name$ -- 153
-if$ -- 1809
+            614 strings with 8266 characters,
+and the built_in function-call counts, 9502 in all, are:
+= -- 932
+> -- 391
+< -- 17
++ -- 137
+- -- 130
+* -- 740
+:= -- 1606
+add.period$ -- 71
+call.type$ -- 23
+change.case$ -- 177
+chr.to.int$ -- 22
+cite$ -- 25
+duplicate$ -- 413
+empty$ -- 671
+format.name$ -- 165
+if$ -- 1932
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 25
-newline$ -- 106
-num.names$ -- 63
-pop$ -- 184
+missing$ -- 28
+newline$ -- 116
+num.names$ -- 69
+pop$ -- 200
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 180
 quote$ -- 0
-skip$ -- 290
+skip$ -- 310
 stack$ -- 0
-substring$ -- 529
-swap$ -- 83
+substring$ -- 553
+swap$ -- 85
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
+type$ -- 126
 warning$ -- 2
-while$ -- 65
+while$ -- 69
 width$ -- 0
-write$ -- 276
+write$ -- 301
 (There were 3 error messages)

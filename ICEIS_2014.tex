@@ -647,6 +647,28 @@ Mean & 133.75 & 38.75 & 36.75 & 2 & 1.75 & 91.60\% & &\tabularnewline
 
 This section presents the case study findings. After the data have been collected, it is analyzed to draw the conclusions. The analysis should obtain the evidence chains from the data to answer both research questions.
 
+As aforementioned, Table~\ref{tab:precision_and_recall} summarizes the results related to the precision, recall and F1-score of our approach. As can be seen the precision and recall related related to \texttt{Select} statements are 100\% and 98.52\%, respectively. Which means that in this case our approach automatically created 100\% truly relevant services when dealing with the \texttt{Select} statements, i.e., no ``false negatives'' and 98.52\% ``rate of true positive''. In other words, from all created services the approach created 67 services but missed 1, i.e., 98.52\%. As for the \texttt{Update} statements the precision and recall gently decrease, 95\% of all services created related to \texttt{Update} statement were relevant and 97.56\% off these services are ``true positive'', respective. Related to the \texttt{Delete} statements the precision and recall slightly dropped 75\% and 88.23\%. Thus, our approach created more irrelevant services for each truly relevant services. As for the \texttt{Insert} statements the metrics suddenly rose to precision equals to 96.42\% and recall to 96.42\%, which means that our approach created 96.42\% services truly relevant and also created 96.42\% ``true positive'' ones. Thereby, the \textbf{RQ$_1$} can be answered as true, that is, the proposed approach can obtain embedded SQL statements from legacy systems to effectively create services.
+
+To answer the \textbf{RQ$_2$} we applied a software equation, see Equation~\ref{eq:effort}. Counting the physical artifacts generated in this case study, we have that 75847 lines of code (SLOC), without considering blank lines and comments, were generated 721 files. By this equation, others can be derived, such as the estimated calculation of minimum development time (in months), see Equation~\ref{eq:tempo_derived}.
+
+\begin{equation}
+t_{min} = 8.14 * (LOC/P )^{0.43} \text{ as } t_{min} > \text{ 6 months }
+\label{eq:tempo_derived}	
+\end{equation}
+
+%According to Pressman~\cite{Pressman} we can set $P=28000$, which means typical parameter for commercial applications  
+
+Setting the values $LOC=75847$ and according to Pressman~\cite{Pressman} we can set $P=28000$. According to Pressman this latter value is a typical parameter for commercial application such as the software herein used, ProgradWeb. As applying the Equation~\ref{eq:tempo_derived}, we can check that the minimum time spent in development of a similar application is closer to 12.49 months. However, it worth to notice that we spent approximately 3 months to devise the tool used in this case study, thus, the gain of time is 9.49 months. 
+
+Furthermore, according to Pressman~\cite{Pressman} we can also define another equation to measure the effort in person-month, see Equation~\ref{eq:homem_derived}. 
+
+\begin{equation}
+E = 180 * Bt^{3} \text{ as } E > \text{ 20 person-month }
+\label{eq:homem_derived}	
+\end{equation}
+
+In order to answer the \textbf{RQ$_2$} we gathered the time consumed by each phase, see Table~\ref{tab:time_each_step}. In the first phase, reverse engineering, the time spent on identifying all embedded SQL statements, creating the PSMs and the PIMs was a total of 62 minutes and 35 seconds. This phase took more time than the other phases due the fact that two parser need to be executed in order to discovery legacy system's knowledge. All the steps in the second phase, reestructuring took 36 minutes. The steps that spent more time was \texttt{Create Entities}. Maybe this came about because the algorithm that is carried out need to create a entity for each identify embedded SQL statement, so, the hard drive need to moving files, causing a gap. Finally, the last phase, forward engineering, spent 40 minutes and 33 seconds. In this phase, the steps that took more time were \texttt{KDM2UML} and \texttt{UML2JavaModel}. Maybe this came about once the ATL seem to be an easy language to realize model-to-model transformation but it presents efficiency issues when applied to medium and large models~\cite{ATLlazy}. As a result, the final time spent by our approach was two hours and 30 minutes.
+
 % subsection analysis_and_interpretation (end)
 
 % subsection data_collection (end)
